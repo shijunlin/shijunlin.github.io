@@ -1,0 +1,829 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta http-equiv="keyword" content="部落格, blog, 新聞台, 相簿, photo, 免費信箱, 信箱, 線上購物, 24h購物, 女性購物, 網路購物, 商店街, 露天拍賣, 分紅網, 金流代收, ATM, Skype, 一元簡訊, IPEVO, 影城, movie, 星座命理, 娛樂, 寵物派, 股市, 下載, toget, 找房子, house, 電子報, epaper, 交友, 家族, 貼圖, 新聞, 網路開店, 電影, 居家生活, 通訊, 娛樂, 政治財經, 休閒, 體育, 影視, 攝影寫真, 觀光, 旅遊, 網路家庭, 貼圖, 露天拍賣, 理財投資, 24小時購物, 影評文章, 達人部落格, 買房子, 居家佈置, 新成屋, 預售屋, 室內設計, 美食, 相片有話說, 相片加註, 外拍, 達人文章, 預告片, 新片預告, 電影時刻表, 紫微運勢, 地圖, map, 健康樂活, 免費軟體, 虛擬主機, 買網址, 學習進修, 彩妝保養, 討論區, 政經, 藝文, 人文抒情, 流行時尚, 廣告刊登, 免費撥接, 遊戲" />
+<meta name="description" content="網路家庭國際資訊股份有限公司( PChome Online Inc. )，成立於1998年7月，是國內首居一指的網路服務集團，旗下包括入口網站(部落格、相簿、新聞、電影影城、找房子、免費電子郵箱、股市、交友、電子報…等)、電子商務(線上購物、24h購物、商店街…等)、及電信通訊(Skype、免費撥接…等)網路服務的綜合網路服務商。並以多年來的電子商務經驗跨足跨足C to C平台，於2006年6月與eBay合資成立露天拍賣網路服務公司，為國內買家和賣家提供新型態的網路交易模式。多年來創造出廣大會員與流量，也為台灣的新經濟產業，立下了本土網路公司的典範。" />
+<meta name="robots" content="index, follow" />
+<meta name="googlebot" content="index, follow" />
+<meta property="og:title" content="PChome Online網路家庭首頁" />
+<meta property="og:url" content=" http://www.pchome.com.tw/" />
+<meta property="og:description" content="網路家庭國際資訊股份有限公司提供網站搜尋及各式網路服務，是國內首居一指的網路服務集團，旗下包括入口網站(部落格、相簿、新聞、電影影城、找房子、免費電子郵箱、股市、交友、電子報…等)、電子商務(線上購物、24h購物、商店街…等)、及電信通訊(Skype、免費撥接…等)網路服務的綜合網路服務商。"/>
+<meta property="og:image" content="http://www.pchome.com.tw/img/pchomelogo.gif">
+<meta property="og:site_name" content="PChome Online網路家庭" />
+<title>PChome Online 網路家庭</title>
+<link href="favicon.ico" rel="shortcut icon">
+<!--[if lt IE 9]><script language="JavaScript" type="text/JavaScript" src="http://www.pchome.com.tw/js/html5.js?1355194867"></script><![endif]-->
+<!--<script language="JavaScript" type="text/JavaScript" src="http://www.pchome.com.tw/js/index.js?1355194867"></script>-->
+<script language="JavaScript" type="text/JavaScript" src="js/jquery.js?1355194867"></script>
+<script language="JavaScript" type="text/JavaScript" src="js/jquery.easing.1.3.js"></script>
+<script language="JavaScript" type="text/JavaScript" src="js/slides.min.jquery.js"></script>
+<script>var $j = jQuery.noConflict();</script>
+<link href="css/index.css?1355194867" rel="stylesheet" type="text/css">
+
+<!--<script language="JavaScript" type="text/JavaScript">
+
+var path = "mfiles/";
+//Ready~ Go, do Important thing!
+$j(document).ready(function(){
+
+    //各區塊頁籤滑鼠mouseenter事件
+    $j('.mnav li').mouseenter(function(){
+        var ul = $j(this).closest('ul');
+        ul.find('li').each(function(){
+            $j(this).attr('class', 'tboff');
+        });
+        $j(this).attr('class', 'tbon');
+        geturl = path + $j(this).attr('id') + ".html?r=" + Math.round((Math.random()*10000)); //取得mfile下的各tag_id版型
+                    $j(this).closest('.mpage').find('.mbody').empty().load(geturl);
+            });
+
+    //Top5滑鼠mouseover事件
+    $j('.topnews_tb li').hover(function(){
+        var ul = $j(this).closest('ul');
+        ul.find('li').each(function(){
+            $j(this).attr('class', 'tboff');
+        });
+        $j(this).attr('class', 'tbon');
+        geturl = path + $j(this).attr('id') + ".html?r=" + Math.round((Math.random()*10000)); //取得mfile下的各tag_id版型
+        $j(this).closest('.topheader_topnews').find('.topnews_page').empty().load(geturl);
+    });
+
+    var y = undefined;
+    var x = null;
+
+    if (!idxJsIsReady) {
+        setTimeout("initial();",300);
+        return;
+    }
+    setKeywords_c();
+            //設定每一個區塊的focus要在那裡
+        //區塊一設定 all
+        var block1 = [0, 1, 2, 3, 4, 5];
+        $j($j('#mnav1 li')[block1[Math.floor(Math.random()*block1.length)]]).trigger("mouseover");
+
+        //區塊二設定 (焦點)
+        var block2 = [0];
+        $j($j('#mnav2 li')[block2[0]]).trigger("mouseover");
+
+        //區塊三設定 (每日一圖)(正妹照)(性感寫真)
+        var block3 = [0, 1, 2, 3, 4, 5];
+        $j($j('#mnav3 li')[block3[Math.floor(Math.random()*block3.length)]]).trigger("mouseover");
+
+        //區塊四設定 all
+        var block4 = [0, 1, 2, 3, 4, 5];
+        $j($j('#mnav4 li')[block4[Math.floor(Math.random()*block4.length)]]).trigger("mouseover");
+
+        //區塊五設定 (台灣遊趣)(人氣文章)(生活趣味)
+        var block5 = [0, 1, 2, 3, 4, 5];
+        $j($j('#mnav5 li')[block5[Math.floor(Math.random()*block5.length)]]).trigger("mouseover");
+
+        //區塊六設定 (徵友)(麻辣話題)(影音貼圖)
+        var block6 = [0, 1, 2, 3, 4, 5];
+        $j($j('#mnav6 li')[block6[Math.floor(Math.random()*block6.length)]]).trigger("mouseover");
+
+        //區塊七設定 all
+        var block7 = [0, 1, 2, 3, 4, 5];
+        $j($j('#mnav7 li')[block7[Math.floor(Math.random()*block7.length)]]).trigger("mouseover");
+
+        //TOP5 (股市)大盤指數 / (新聞)焦點 為預設
+        var topnewsblock = [0];
+        $j($j('#top5menu li')[topnewsblock[0]]).trigger("mouseover");
+
+        //設定搜尋框閃爍
+    document.getElementById('s_input').focus();});
+</script>-->
+<!--<script type="text/javascript" src="http://ad.pchome.com.tw/cs/js?s=1"></script>-->
+</head>
+
+<body>
+<!-- 24_pchome_online_h start --><a href="http://adcl.pchome.com.tw/clickAd2.html?q=24~pchome_online_h~294098" target="_blank"></a><!-- 24_pchome_online_h end --><!-- 16_pchome_online_h start --><a href="http://adcl.pchome.com.tw/clickAd2.html?q=16~pchome_online_h~247554" target="_blank"></a><!-- 16_pchome_online_h end --><div class="wrapper">
+<!-- 82_pchome_online_h start -->
+<style>
+#div_superbar_swf{position:relative;display:block;width:980px;height:80px;margin:0 auto;background:#999;color:#fff}</style>
+<div id="div_superbar_swf"><noscript><a href="http://adcl.pchome.com.tw/clickAd2.html?q=82~pchome_online_h~325503"><img src="980x80_tc.gif" width="980" height="80" border="0"></a></noscript></div>
+<script language="javascript">
+var ad_date=new Date();
+var superbar_id='ad_' + ad_date.getFullYear() + ad_date.getMonth() + ad_date.getDate();
+var superbar_url	= "http://ck101.com";
+var superbar_target	= "_blank";
+var superbar_file_img	= "980x80_tc.gif";
+var superbar_file_swf	= "980x80_tc.swf";
+var superbar_file_exp	= "980x315_tc.swf";
+var superbar_file_vdo	= "";
+var superbar_width_swf	= 980;
+var superbar_height_swf	= 80;
+var superbar_width_exp	= 980;
+var superbar_height_exp	= 315;
+var superbar_volume	= 50;
+</script>
+<script src="ad_superbarvideo.js"></script>
+<script language="JavaScript"></script>
+<!-- 82_pchome_online_h end --><!-- error_08 --><!-- 廣告區 -->
+<!-- error_08 --><!-- 廣告區 -->
+
+
+<!-- 首頁大框架 start -->
+<div class="coordinatebox">
+
+<!-- 頁首 start -->
+<header>
+<div class="topheader">
+
+  <!-- TOP5 Start -->
+  <div class="topheader_topnews">
+    <ul class="topnews_tb" id="top5menu">
+      <li class="tboff" id="tag56"><a id="tpnews_56" target="_blank" href="http://pchome.syspower.com.tw">大盤指數</a></li>
+      <li class="tboff" id="tag57"><a id="tpnews_57" target="_blank" href="http://news.pchome.com.tw/cat/entertainment/hot/">娛樂</a></li>
+      <li class="tboff" id="tag58"><a id="tpnews_58" target="_blank" href="http://news.pchome.com.tw/cat/living/hot/">生活</a></li>
+      <li class="tboff" id="tag59"><a id="tpnews_59" target="_blank" href="http://news.pchome.com.tw/cat/politics/hot/">政治</a></li>
+      <li class="tboff" id="tag60"><a id="tpnews_60" target="_blank" href="http://pchome.syspower.com.tw/news/cat2">股市動態</a></li>
+    </ul> 
+        <div class="topnews_page" id="topnewsb">&nbsp;</div>
+  </div>
+  <!-- TOP5 End -->
+
+  <!-- 頁首中欄 search bar Start -->
+  <div class="topheader_search">
+    <a class="pchomeUSA" href="http://www.pchomeus.com/">PChome美國</a>
+  	<form name="search" method="get" action="search_redirect.php">
+        <ul class="search_tb">
+          <li><a onclick="search_tag(1);" id="lia1" class="tbon">找全部</a><b>|</b></li>
+          <li><a onclick="search_tag(2);" id="lia2">找價格</a><b>|</b></li>
+          <li><a onclick="search_tag(3);" id="lia3">訂飯店</a><b>|</b></li>
+        </ul>
+      <div class="search_field" id="search_area">
+        <input id="s_input" type="text" name="q" class="field_txtarea">
+        <input id="s" type="hidden" name="s" value="1">
+        <input id="s_button" type="submit" name="s_submit" value="" class="field_submit" >
+      </div>
+      <div id="keywords" class="search_keyword">熱門：</div>  	</form>
+  </div>
+  <!-- 頁首中欄 search bar End -->
+
+  <!-- 頁首左欄 logo 開始 -->
+  <div class="topheader_logo">
+  	<div class="logo_ad">
+<!--  	    <style>.topheader_search{width:330px}.topheader_logo .logo_ad{background:#fff;width:290px;}.topheader_search .search_field .field_txtarea{width:210px}</style>
+                                   <a href="http://www.pchome.com.tw/counter/2540023*http://www.ruten.com.tw/" target="_blank"><img src="http://www.pchome.com.tw/img/logo_ad.gif"></a>  	--></div>
+  	    <div class="logo_login"><a class="set_index" href="http://faq.pchome.com.tw/faq_solution.html?q_id=46&c_nickname=member&f_id=1" target="_blank">設成首頁</a><a href="https://member.pchome.com.tw/login.html?ref=http://www.pchome.com.tw/">登入</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.pchome.com.tw/counter.php?sid=423787" >會員中心</a></div>
+  </div>
+  <!-- 頁首左欄 logo 結束 -->
+</div>
+</header>
+<!-- 頁首 end -->
+
+<!-- 上欄 左欄 中欄 下欄 頁尾 start -->
+<div class="container">
+  <!-- 上欄 start -->
+  <div class="sidebar_top">
+    <aside class="top_adpublish"><a href="http://4c.pchome.com.tw/ad/"><img src="http://www.pchome.com.tw/img/icon_adpublish.gif" border="0"></a></aside>
+    <aside class="top_headlinead"><!-- 0_pchome_online_h start --><!-- 0_pchome_online_h start --><a href="http://adcl.pchome.com.tw/clickAd2.html?q=0~pchome_online_h~322254" target="_blank">全館免運★秋冬服飾5折起</a><!-- 0_pchome_online_h end --><!-- 0_pchome_online_h end --><!-- 14_pchome_online_h start --><!-- 14_pchome_online_h start --><a href="http://adcl.pchome.com.tw/clickAd2.html?q=14~pchome_online_h~327901" target="_blank">厚棉刷毛長T↘166up</a><!-- 14_pchome_online_h end --><!-- 14_pchome_online_h end --><!-- 23_pchome_online_h start --><!-- 23_pchome_online_h start --><a href="http://adcl.pchome.com.tw/clickAd2.html?q=23~pchome_online_h~327902" target="_blank">分享★美腿少女都這樣保養</a><!-- 23_pchome_online_h end --><!-- 23_pchome_online_h end --><!-- 1_pchome_online_h start --><!-- 1_pchome_online_h start --><a href="http://adcl.pchome.com.tw/clickAd2.html?q=1~pchome_online_h~328322" target="_blank">非法吸金堆出鈔票山 重...</a><!-- 1_pchome_online_h end --><!-- 1_pchome_online_h end --></aside>
+  </div>
+  <!-- 上欄 end -->
+  <!-- 左欄 start -->
+  <div class="sidebar_left">
+    <!-- 頻道列 Start -->
+    <nav><ul class="left"><li ><a href="http://www.pchome.com.tw/counter/572*http://shopping.pchome.com.tw/">線上購物</a></li><li style="background:url(http://www.pchome.com.tw/img/icon_24hr_full.jpg) 0 0 no-repeat;cursor:pointer" onclick="window.location.href='/counter/25906*http://24h.pchome.com.tw/'"><a href="http://www.pchome.com.tw/counter/25906*http://24h.pchome.com.tw/"></a></li><li ><a href="http://www.pchome.com.tw/counter/1908069*http://shopping.pchome.com.tw/book">24h書店</a></li><li ><a href="http://www.pchome.com.tw/counter/574*http://www.pcstore.com.tw/">商店街</a></li><li ><a href="http://www.pchome.com.tw/counter/1440051*http://www.liker.com.tw/">Liker團購</a></li><li ><a style="background:url(http://www.pchome.com.tw/img/icon_ruten.jpg) left center no-repeat;padding-left:18px" href="/counter/575*http://www.ruten.com.tw/">露天拍賣</a></li></ul><ul class="right"><li ><a href="http://www.pchome.com.tw/counter/1918408*http://www.pchomeus.com/" class='c2'><i>PChome美國</i></a></li><li ><a href="http://www.pchome.com.tw/counter/647*http://mail.pchome.com.tw/">信箱</a></li><li ><a style="background:url(http://www.pchome.com.tw/img/icon_skype.gif) left center no-repeat;padding-left:18px" href="/counter/657*http://skype.pchome.com.tw/index.htm" class='c2'>Skype</a></li><li ><a href="http://www.pchome.com.tw/counter/579*http://news.pchome.com.tw/">新聞</a> / <a href="http://www.pchome.com.tw/counter/3738*http://news.pchome.com.tw/weather/">氣象</a></li><li ><a style="background:url(http://www.pchome.com.tw/img/icon_rakuya.gif) left center no-repeat;padding-left:18px" href="/counter/113759*http://www.rakuya.com.tw/">買賣租屋</a></li><li ><a href="http://www.pchome.com.tw/counter/580*http://pchome.syspower.com.tw/">股市</a> / <a href="http://www.pchome.com.tw/counter/1144796*http://pchome.syspower.com.tw/order/">下單</a></li></ul></nav><div class="nav_border"></div><nav><ul class="left"><li ><a href="http://www.pchome.com.tw/counter/982543*http://global.pchome.com.tw/">全球購物</a></li><li ><a href="http://www.pchome.com.tw/counter/1874691*http://www.pchomepay.com.tw/"><i>PChomePay</i></a></li><li ><a href="http://www.pchome.com.tw/counter/577* http://atm.pchome.com.tw/pchome_otheratm.html">ATM轉帳</a></li><li ><a  href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_default~294121"><b>大買家</b></a></li><li ><a href="http://www.pchome.com.tw/counter/1000429*http://car.pchome.com.tw/">買車</a></li><li ><a style="background:url(http://www.pchome.com.tw/img/icon_togame.gif) left center no-repeat;padding-left:18px" href="/counter/1132770*http://www.togame.com.tw/"><b>toGame</b></a></li></ul><ul class="right"><li ><a style="background:url(http://www.pchome.com.tw/img/icon_search.gif) left center no-repeat;padding-left:18px" href="/counter/1174091*http://search.pchome.com.tw/">找東西</a></li><li ><a style="background:url(http://www.pchome.com.tw/img/icon_kaza.gif) left center no-repeat;padding-left:18px" href="/counter/1404360*http://kaza.pchome.com.tw/">kaza</a></li><li ><a href="http://www.pchome.com.tw/counter/649*http://photo.pchome.com.tw/"><b>相簿</b></a></li><li ><a href="http://www.pchome.com.tw/counter/648*http://mypaper.pchome.com.tw/"><b>個人新聞台</b></a></li><li ><a href="http://www.pchome.com.tw/counter/422568*http://forum.pchome.com.tw/">開講</a></li><li ><a href="http://www.pchome.com.tw/counter/794392*http://travel.pchome.com.tw/">旅行團</a> / <a href="http://www.pchome.com.tw/counter/1905641*http://travel.pchome.com.tw/flight.html" class='c2'>機票</a></li></ul></nav><div class="nav_border"></div><nav><ul class="left"><li ><a href="http://www.pchome.com.tw/counter/435717*http://webgame.pchome.com.tw/">小遊戲</a></li><li ><a href="http://www.pchome.com.tw/counter/292057*http://webgame.pchome.com.tw/mj/">線上麻將</a></li><li ><a href="http://www.pchome.com.tw/counter/652*http://www.tagapie.com.tw/">寵物派</a></li><li ><a href="http://www.pchome.com.tw/counter/44684*http://movie.pchome.com.tw/">電影</a> / <a href="http://www.pchome.com.tw/counter/2051432*http://movie.pchome.com.tw/" class='c2'>訂票</a></li><li ><a href="http://www.pchome.com.tw/counter/594*http://toget.pchome.com.tw/">下載</a></li><li ><a href="http://www.pchome.com.tw/counter/582*http://epaper.pchome.com.tw/">電子報</a></li></ul><ul class="right"><li ><a href="http://www.pchome.com.tw/counter/473478*http://mypage.pchome.com.tw/">名片盒</a></li><li ><a href="http://www.pchome.com.tw/counter/651*http://club.pchome.com.tw/">家族</a></li><li ><a href="http://www.pchome.com.tw/counter/932994*http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_default~283890">美日大頭條</a></li><li ><a href="http://www.pchome.com.tw/counter/650*http://love.pchome.com.tw/">交友</a></li><li ><a href="http://www.pchome.com.tw/counter/711487*http://vexchange.pchome.com.tw/">虛擬交易所</a></li><li ><a href="http://www.pchome.com.tw/counter/332524*http://beauty.pchome.com.tw/">美學院</a></li></ul></nav><div class="nav_border"></div>
+                    <!-- 旗艦商圈 Start (這裡由廣告系統吐，目前先用art版型) -->
+                    <aside>
+                        <div class='left_adlogo'>
+                            <!-- 83_pchome_index_A start --><a href="http://adcl.pchome.com.tw/clickAd2.html?q=83~pchome_index_A~294032" target="_blank"><img border="0" src="http://w6.pchome.com.tw/adpics/pic_294032_185550.gif" /></a><!-- 83_pchome_index_A end -->                            <!-- 83_pchome_index_B start --><a href="http://adcl.pchome.com.tw/clickAd2.html?q=83~pchome_index_B~293954" target="_blank"><img border="0" src="http://w6.pchome.com.tw/adpics/pic_293954_185507.jpg" /></a><!-- 83_pchome_index_B end -->                            <!-- 83_pchome_index_C start --><a href="http://adcl.pchome.com.tw/clickAd2.html?q=83~pchome_index_C~294076" target="_blank"><img border="0" src="http://w6.pchome.com.tw/adpics/pic_294076_185768.jpg" /></a><!-- 83_pchome_index_C end -->                            <!-- 83_pchome_index_D start --><a href="http://adcl.pchome.com.tw/clickAd2.html?q=83~pchome_index_D~322462" target="_blank"><img border="0" src="http://w6.pchome.com.tw/adpics/pic_322462_196718.jpg" /></a><!-- 83_pchome_index_D end -->                            <!-- 83_pchome_index_E start --><a href="http://adcl.pchome.com.tw/clickAd2.html?q=83~pchome_index_E~313761" target="_blank"><img border="0" src="http://w6.pchome.com.tw/adpics/pic_313761_194687.gif" /></a><!-- 83_pchome_index_E end -->                            <!-- 83_pchome_index_F start --><a href="http://adcl.pchome.com.tw/clickAd2.html?q=83~pchome_index_F~293956" target="_blank"><img border="0" src="http://w6.pchome.com.tw/adpics/pic_293956_185509.gif" /></a><!-- 83_pchome_index_F end -->                            <!-- error_08 -->                            <!-- error_08 -->                            <!-- error_08 -->                            <!-- error_08 -->                        </div>
+                    </aside>
+                    <!-- 旗艦商圈 End --><nav><ul class="left"><li ><a href="http://www.pchome.com.tw/counter/675*http://sms.pchome.com.tw/">一元簡訊</a></li><li ><a href="http://www.pchome.com.tw/counter/592*http://fate.pchome.com.tw/">星座命理</a></li></ul><ul class="right"><li ><a href="http://www.pchome.com.tw/counter/124324*http://fund.pchome.com.tw/">基金</a></li><li ><a href="http://www.pchome.com.tw/counter/779*http://www.ipevo.com.tw/">IPEVO</a></li></ul></nav><nav><ul class="left"><li ><a href="http://www.pchome.com.tw/counter/670*http://bonus.pchome.com.tw/web/index.php">免費撥接</a></li><li ><a href="http://www.pchome.com.tw/counter/766947*http://office-sms.pchome.com.tw/index.html">企業簡訊</a></li><li ><a href="http://www.pchome.com.tw/counter/585*http://health.pchome.com.tw/">健康樂活</a></li><li ><a href="http://www.pchome.com.tw/counter/671*http://myname.pchome.com.tw/">買網址</a></li><li ><a href="http://www.pchome.com.tw/counter/674*http://webhosting.pchome.com.tw/">虛擬主機</a></li></ul><ul class="right"><li ><a href="http://www.pchome.com.tw/counter/571*http://webhosting.pchome.com.tw/activity/officemail/index.html" class='c2'>企業郵件</a></li><li ><a href="http://www.pchome.com.tw/counter/586*http://elearning.pchome.com.tw/">學習進修</a></li><li ><a href="http://www.pchome.com.tw/counter/741220*http://www.toweb.com.tw/">網站空間</a></li><li ><a href="http://www.pchome.com.tw/counter/590*http://www.photofast.com.tw/default.asp?cpurl=pchome">沖印</a></li><li ><a href="http://www.pchome.com.tw/counter/34936*http://money.pchome.com.tw/">理財</a></li></ul></nav><nav><ul class="left"><li ><a href="http://www.pchome.com.tw/counter/15386*http://member.pchome.com.tw/">會員中心</a></li></ul><ul class="right"><li ><a href="http://www.pchome.com.tw/counter/131466*http://news.pchome.com.tw/magazine">雜誌</a></li></ul></nav><div class="nav_border"></div>    <!-- 頻道列 End -->
+
+    <aside>
+      <div class="left_adbox">
+                <div class="adbox_ad1">
+ <a href="http://www.pchome.com.tw/counter.php?sid=2485166"><img src="http://w6.pchome.com.tw/img/64/20121129105501_913604780.jpg"><b>獨家，寵愛會員</b>就是獨厚會員，等值好禮參加就送！</a>
+</div>      </div>
+
+            <div class="left_adbox">
+ <div class="adbox_ad"><a href="http://www.pchome.com.tw/counter.php?sid=2536523"><img src="http://w6.pchome.com.tw/img/53/20121210144843_62956301.gif"><b>教你半年牢記6000英文單字</b>英文單字就該這樣背！用對方法半年牢記6000單字！</a></div>
+ <div class="adbox_border"></div>
+ <div class="adbox_ad"><a href="http://www.pchome.com.tw/counter.php?sid=2536524"><img src="http://w6.pchome.com.tw/img/53/20121210144843_1835562234.gif"><b>網路正妹大爆出軌日記</b>網路報夯短片，分享影片立即抽平板電腦、iPod、拍立得</a></div>
+</div>
+<div class="left_hotact">
+ <ul>
+ <li>．<a href="http://www.pchome.com.tw/counter.php?sid=2536525">3分鐘讓你搞懂癌症險</a></li>
+ <li>．<a href="http://www.pchome.com.tw/counter.php?sid=2536526">好康 平板0元~快搶</a></li>
+ <li>．<a href="http://www.pchome.com.tw/counter.php?sid=2536527">【獨家】屬於你的超值好康</a></li>
+ <li>．<a href="http://www.pchome.com.tw/counter.php?sid=2536528">香港跨年只要？點我驚喜價</a></li>
+ <li>．<a href="http://www.pchome.com.tw/counter.php?sid=2536529">年假還沒放完怎麼辦？</a></li>
+ </ul>
+</div>
+    </aside>
+  </div>
+  <!-- 左欄 end -->
+  <!-- 中欄 start -->
+  <div class="contentbox">
+	  <!-- 區塊一 start -->
+	        <div class="mpage">
+        <p class="bdline"></p>
+        <ul class="mnav" id="mnav1">
+          <li class="tboff" id="tag7"><a href="http://www.pchome.com.tw/counter/114565*http://shopping.pchome.com.tw/" target="_blank">24h購物</a></li>
+          <li class="tboff" id="tag5"><a href="http://www.pchome.com.tw/counter/1905649*http://crazymike.tw/index.asp?utm_campaign=pchome&utm_medium=pchome24hr&utm_source=title" target="_blank">瘋狂賣客</a></li>
+          <li class="tboff" id="tag29"><a href="http://www.pchome.com.tw/counter/114567*http://www.rakuya.com.tw/" target="_blank">樂屋網</a></li>
+          <li class="tboff" id="tag4"><a href="http://www.pchome.com.tw/counter/114569*http://www.ruten.com.tw/" target="_blank">露天拍賣</a></li>
+          <li class="tboff" id="tag6"><a href="http://www.pchome.com.tw/counter/1918409*http://www.pchomeus.com/" target="_blank">美國站</a></li>
+          <li class="tboff" id="tag8"><a href="http://www.pchome.com.tw/counter/2071991*http://4c.pchome.com.tw/campaign/2012/itmonth/redirect.php?sw=807" target="_blank">瘋殺資訊月</a></li>
+        </ul>
+        <div class="mbody" id="mbody1">&nbsp;</div>
+      </div>
+	  <!-- 區塊一 end -->
+      <!-- ad_420x80 start -->
+      <aside class="center_ad7">
+        <!-- 7_pchome_online_h start --><!-- 7_pchome_online_h start --><a href="http://adcl.pchome.com.tw/clickAd2.html?q=7~pchome_online_h~327862" target="_blank"><img border="0" src="http://w6.pchome.com.tw/adpics/pic_327862_198763.gif" /></a><!-- 7_pchome_online_h end --><!-- 7_pchome_online_h end -->
+      </aside>
+      <!-- ad_420x80 end -->
+      <!-- 大三元 start -->
+      <aside class="center_ad57">
+      <ul>
+      <li><!-- 57_pchome_index_A start --><!-- 57_pchome_index_A start --><a href="http://adcl.pchome.com.tw/clickAd2.html?q=57~pchome_index_A~310187" target="_blank"><img border="0" src="http://w6.pchome.com.tw/adpics/pic_310187_198671.gif" /></a><!-- 57_pchome_index_A end --><!-- 57_pchome_index_A end --></li>
+      <li><!-- 57_pchome_index_B start --><!-- 57_pchome_index_B start --><a href="http://adcl.pchome.com.tw/clickAd2.html?q=57~pchome_index_B~321707" target="_blank"><img border="0" src="http://w6.pchome.com.tw/adpics/pic_321707_196487.jpg" /></a><!-- 57_pchome_index_B end --><!-- 57_pchome_index_B end --></li>
+      <li class="lastli"><!-- 57_pchome_index_C start --><!-- 57_pchome_index_C start --><a href="http://adcl.pchome.com.tw/clickAd2.html?q=57~pchome_index_C~326749" target="_blank"><img border="0" src="http://w6.pchome.com.tw/adpics/pic_326749_198637.gif" /></a><!-- 57_pchome_index_C end --><!-- 57_pchome_index_C end --></li>
+      </ul>
+      </aside>
+	  <!-- 大三元 end -->
+      <!-- 跑馬燈開始 -->
+      <aside class="center_adticker">
+ <ul id="ticker_sample">
+ <li><a href="http://www.pchome.com.tw/counter.php?sid=2537140" target="_blank"><u class="pop3">瘋啥</u></a>
+ <a href="http://www.pchome.com.tw/counter.php?sid=2537141" target="_blank">年終慶！現金加碼送</a><b>|</b>
+ <a href="http://www.pchome.com.tw/counter.php?sid=2537142" target="_blank">全館限時回饋2折起</a><b>|</b>
+ </li>
+ <li><a href="http://www.pchome.com.tw/counter.php?sid=2537146" target="_blank"><u class="pop1">爆夯</u></a>
+ <a href="http://www.pchome.com.tw/counter.php?sid=2537147" target="_blank">送5星級住宿</a><b>|</b>
+ <a href="http://www.pchome.com.tw/counter.php?sid=2537148" target="_blank">送7-11禮券2千元</a><b>|</b>
+ <a href="http://www.pchome.com.tw/counter.php?sid=2537149" target="_blank">免費遊六福村、劍湖山</a><b>|</b>
+ </li>
+ <li><a href="http://www.pchome.com.tw/counter.php?sid=2537152" target="_blank"><u class="pop2">哈燒</u></a>
+ <a href="http://www.pchome.com.tw/counter.php?sid=2537153" target="_blank">推讚送三星S3</a><b>|</b>
+ <a href="http://www.pchome.com.tw/counter.php?sid=2537154" target="_blank">送Nexus 7</a><b>|</b>
+ <a href="http://www.pchome.com.tw/counter.php?sid=2537155" target="_blank">送富士拍立得</a><b>|</b>
+ </li>
+ <li><a href="http://www.pchome.com.tw/counter.php?sid=2537158" target="_blank"><u class="pop4">好物</u></a>
+ <a href="http://www.pchome.com.tw/counter.php?sid=2537159" target="_blank">10萬元購車</a><b>|</b>
+ <a href="http://www.pchome.com.tw/counter.php?sid=2537160" target="_blank">AUDI A3↘27萬</a><b>|</b>
+ <a href="http://www.pchome.com.tw/counter.php?sid=2537161" target="_blank">MINI↘只要50萬</a><b>|</b>
+ </li>
+ <li><a href="http://www.pchome.com.tw/counter.php?sid=2537164" target="_blank"><u class="pop3">最新</u></a>
+ <a href="http://www.pchome.com.tw/counter.php?sid=2537165" target="_blank">每天不到30元</a><b>|</b>
+ <a href="http://www.pchome.com.tw/counter.php?sid=2537166" target="_blank">保障一次到位</a><b>|</b>
+ <a href="http://www.pchome.com.tw/counter.php?sid=2537167" target="_blank">最高300萬</a><b>|</b>
+ </li>
+ </ul>
+ <script language="javascript">
+ function slideLine(box,stf,delay,speed,h){
+ var slideBox = document.getElementById(box);
+ var delay = delay||1000,speed = speed||20,h = h||20;
+ var tid = null,pause = false;
+ var s = function(){tid=setInterval(slide, speed);}
+ var slide = function(){
+ if(pause) return;
+ slideBox.scrollTop += 1;
+ if(slideBox.scrollTop%h == 0){
+ clearInterval(tid);
+ slideBox.appendChild(slideBox.getElementsByTagName(stf)[0]);
+ slideBox.scrollTop = 0;
+ setTimeout(s, delay);
+ }
+ }
+ slideBox.onmouseover=function(){pause=true;}
+ slideBox.onmouseout=function(){pause=false;}
+ setTimeout(s, delay);
+ }
+ slideLine('ticker_sample','li',3000,20,20);
+ </script>
+</aside>      <!-- 跑馬燈結束 -->
+	  <!-- 區塊二 Start -->
+      <div class="mpage">
+        <p class="bdline"></p>
+        <ul class="mnav" id="mnav2">
+          <li class="tboff" id="tag24"><a href="http://news.pchome.com.tw/" target="_blank">11點新聞</a></li>
+          <li class="tboff" id="tag23"><a href="http://news.pchome.com.tw/cat/entertainment/hot/" target="_blank">娛樂</a></li>
+          <li class="tboff" id="tag28"><a href="http://news.pchome.com.tw/cat/living/hot/" target="_blank">生活</a></li>
+          <li class="tboff" id="tag40"><a href="http://news.pchome.com.tw/cat/politics/hot/" target="_blank">政治</a></li>
+          <li class="tboff" id="tag27"><a href="http://news.pchome.com.tw/cat/sport/hot/" target="_blank">體育</a></li>
+          <li class="tboff" id="tag26"><a href="http://news.pchome.com.tw/cat/society/hot/" target="_blank">社會</a></li>
+        </ul>
+        <div class="mbody" id="mbody2">&nbsp;</div>
+      </div>
+	  <!-- 區塊二 End -->
+
+   	  <!-- 區塊三 Start -->
+      <div class="mpage">
+        <p class="bdline"></p>
+        <ul class="mnav" id="mnav3">
+          <li class="tboff" id="tag38"><a href="http://photo.pchome.com.tw/" target="_blank">每日一圖</a></li>
+          <li class="tboff" id="tag36"><a href="http://photo.pchome.com.tw/" target="_blank">性感照</a></li>
+          <li class="tboff" id="tag39"><a href="http://photo.pchome.com.tw/" target="_blank">清涼寫真</a></li>
+          <li class="tboff" id="tag49"><a href="http://photo.pchome.com.tw/" target="_blank">養眼相片</a></li>
+          <li class="tboff" id="tag35"><a href="http://photo.pchome.com.tw/" target="_blank">火辣鏡頭</a></li>
+          <li class="tboff" id="tag65"><a href="http://search.pchome.com.tw/" target="_blank">熱搜排行</a></li>
+        </ul>
+        <div class="mbody" id="mbody3">&nbsp;</div>
+      </div>
+	  <!-- 區塊三 End -->
+	  <!-- 區塊四 Start -->
+      <div class="mpage">
+        <p class="bdline"></p>
+        <ul class="mnav" id="mnav4">
+          <li class="tboff" id="tag9"><a href="http://news.pchome.com.tw/cat/expense/hot" target="_blank">消費</a></li>
+          <li class="tboff" id="tag10"><a href="http://news.pchome.com.tw/cat/travel/hot" target="_blank">旅遊</a></li>
+          <li class="tboff" id="tag21"><a href="http://news.pchome.com.tw/cat/internation/hot/" target="_blank">國際</a></li>
+          <li class="tboff" id="tag22"><a href="http://news.pchome.com.tw/cat/finance/hot/" target="_blank">財經</a></li>
+          <li class="tboff" id="tag66"><a href="http://news.pchome.com.tw/cat/science/hot/" target="_blank">科技</a></li>
+          <li class="tboff" id="tag32"><a href="http://news.pchome.com.tw/cat/healthcare/hot/" target="_blank">健康</a></li>
+        </ul>
+        <div class="mbody" id="mbody4">&nbsp;</div>
+      </div>
+	  <!-- 區塊四 End -->
+
+      <!-- 區塊五 Start -->
+      <div class="mpage">
+        <p class="bdline"></p>
+        <ul class="mnav" id="mnav5">
+          <li class="tboff" id="tag68"><a href="http://mypaper.pchome.com.tw/index/search/keyword=&sfield=1&catalog=120" target="_blank">食在好味</a></li>
+          <li class="tboff" id="tag69"><a href="http://mypaper.pchome.com.tw/index/search/keyword=&sfield=1&catalog=100" target="_blank">台灣遊趣</a></li>
+          <li class="tboff" id="tag70"><a href="http://mypaper.pchome.com.tw/index/search/keyword=&sfield=1&catalog=110" target="_blank">偶像明星</a></li>
+          <li class="tboff" id="tag43"><a href="http://mypaper.pchome.com.tw/index/hot-paper" target="_blank">人氣文章</a></li>
+          <li class="tboff" id="tag71"><a href="http://mypaper.pchome.com.tw/" target="_blank">生活趣味</a></li>
+          <li class="tboff" id="tag47"><a href="http://mypaper.pchome.com.tw/" target="_blank">音樂影劇</a></li>
+        </ul>
+        <div class="mbody" id="mbody5">&nbsp;</div>
+      </div>
+      <!-- 區塊五 End -->
+
+	  <!-- 區塊六 Start -->
+      <div class="mpage">
+        <p class="bdline"></p>
+        <ul class="mnav" id="mnav6">
+          <li class="tboff" id="tag41"><a href="http://love.pchome.com.tw/" target="_blank">徵友</a></li>
+          <li class="tboff" id="tag30"><a href="http://beauty.pchome.com.tw/" target="_blank">愛美話題</a></li>
+          <li class="tboff" id="tag34"><a href="http://forum.pchome.com.tw/forum_index/59/" target="_blank">麻辣話題</a></li>
+          <li class="tboff" id="tag31"><a href="http://forum.pchome.com.tw/" target="_blank">影音貼圖</a></li>
+          <li class="tboff" id="tag13"><a href="http://car.pchome.com.tw/" target="_blank">買車情報</a></li>
+          <li class="tboff" id="tag44"><a href="http://kaza.pchome.com.tw/" target="_blank">kaza一下</a></li>
+        </ul>
+        <div class="mbody" id="mbody6">&nbsp;</div>
+      </div>
+	  <!-- 區塊六 End -->
+
+      <!-- 區塊七 Start -->
+      <div class="mpage">
+        <p class="bdline"></p>
+        <ul class="mnav" id="mnav7">
+          <li class="tboff" id="tag11"><a href="http://news.pchome.com.tw/magazine/po/hot" target="_blank">政治時事</a></li>
+          <li class="tboff" id="tag12"><a href="http://news.pchome.com.tw/magazine/fi/hot" target="_blank">財經投資</a></li>
+          <li class="tboff" id="tag15"><a href="http://news.pchome.com.tw/magazine/sa/hot" target="_blank">行銷管理</a></li>
+          <li class="tboff" id="tag16"><a href="http://news.pchome.com.tw/magazine/sh/hot" target="_blank">消費時尚</a></li>
+          <li class="tboff" id="tag17"><a href="http://news.pchome.com.tw/magazine/li/hot" target="_blank">生活科技</a></li>
+          <li class="tboff" id="tag18"><a href="http://news.pchome.com.tw/magazine/cl/hot" target="_blank">藝文學習</a></li>
+        </ul>
+        <div class="mbody" id="mbody7">&nbsp;</div>
+      </div>
+      <!-- 區塊七 End -->
+
+  </div>
+  <!-- 中欄 end -->
+  <!-- 右欄 start -->
+  <div class="sidebar_right">
+
+  	<!-- 右欄置頂 擴張tbar + 每日一問 start -->
+      <!--每日一問活動 START -->
+      <style type="text/css">
+<!--
+.sceng1 {border:1px #CCC solid;width:328px;height:73px;padding:0 10px;}
+.sceng1 p{width:100%;height:15px;line-height:15px;font-size:13px;padding:5px 0;border-bottom:1px #e6e6e6 solid;}
+.sceng1 p b{font-weight:600;color:#000}
+.sceng1 p i{font-style:normal;color:#4e4e4e}
+.sceng1 p u{float:right;text-decoration:none;color:#0090eb;*margin-top:-15px}
+.sceng1 span{float:right}
+.sceng1 form {font-family:Tahoma;font-size:12px;}
+.sceng1 form p{width:300px;padding:5px 0 5px 20px;height:17px;line-height:17px;font-size:15px;font-weight:600;color:#0090eb;overflow:hidden;border-bottom:none;background:url(http://www.pchome.com.tw/img/icon_sceng.gif) 0 center no-repeat;}
+.sceng1 form input,.sceng1 form label{vertical-align:middle;}
+.sceng1 span{float:right;margin-top:-40px;text-align:center;}
+.sceng1 span img{*margin:0 0 2px 0;}
+.sceng1 p.msg{width:100%;height:15px;line-height:17px;font-size:17px;padding:5px 0 0 0;font-weight:600;border:none}
+.sceng1 p.txt{border:none}
+.sceng1 p.txt a{width:100%;height:17px;line-height:17px;font-size:13px;}
+
+.sceng1 .ok{float:left;width:88px}
+.sceng1 .ck{float:left;width:240px;*margin:-10px 0 0 0}
+.te{width:220px;font-size:11px;margin-top:-5px;-webkit-text-size-adjust:none;height:13px;line-height:13px;font-family:"新細明體";}
+.sceng1 p.fo{font-size:13px;border:none;margin:0;padding:2px 0 0 0}
+.sceng1 p.fo input {height:13px}
+.sceng1 p.op {border:none;padding:2px 0 0 0}
+.sceng1 p.op select {height:20px;*margin:6px 0 0 0;height:22px;}
+.sceng1 p.op img{position:relative;top:5px;*top:2px}
+-->
+</style><div class="right_adtop" style="height:185px">      <script>
+      function ED_QA_ACT(){
+	      var C1 = document.getElementById('C1').checked;
+          var C2 = document.getElementById('C2').checked;
+          var C3 = document.getElementById('C3').checked;          if (C1 == true) var ch='C1';
+          if (C2 == true) var ch='C2';
+          if (C3 == true) var ch='C3';          if (!ch){
+              alert('每日一問請作答!');
+          }else{
+              var anser = 'C1';var trans = 'mammot (長毛象)\nelephant (大象)\nhydrometeor (水象)\n';			  if (ch == anser){
+                  if (trans){alert('恭喜你答對了!\n\n' + trans + '\n立即填資料 抽電影票吧!可以索取Tutor ABC免費英文課程喔!!');}else{alert('恭喜你答對了!\n 立即填資料 抽電影票吧!可以索取Tutor ABC免費英文課程喔!!');}
+                  $j.get('event_counter.php', {type: 99}, function(data){});
+                  var popok = document.getElementById('popqaok');
+                  popok.style.display = '';
+                  var qaform = document.getElementById('qaform');
+                  qaform.style.display = 'none';
+              }else{
+                  var poperr = document.getElementById('popqaerr');
+                  poperr.style.display = '';
+                  var qaform = document.getElementById('qaform');
+                  qaform.style.display = 'none';
+              }
+          }
+      }
+      function ED_writeform(){
+          var realname = document.getElementById('realname').value;
+          var tel      = document.getElementById('tel').value;
+          var email    = document.getElementById('email').value;
+          var age      = document.getElementById('age').value;
+          var sitem    = document.getElementById('sitem').value;
+          var chkido   = document.getElementById('chkido').checked;
+          if (!realname){
+              alert('請填入您的姓名!');
+              document.getElementById('realname').focus();
+              return false;
+          }
+          if (!tel){
+              alert('請填入您的手機!');
+              document.getElementById('tel').focus();
+              return false;
+          }else{
+              if (isNaN(tel)){
+                  alert('手機不得含非數字字元!');
+                  document.getElementById('tel').focus();
+                  return false;
+              }
+              var telnum = tel.length;
+              if (telnum != 10){
+                  alert('手機號碼為10個數字!');
+                  document.getElementById('tel').focus();
+                  return false;
+              }
+              var htel = tel.slice(0, 2);
+              if (htel != '09'){
+                  alert('手機號碼開頭應為 09 !');
+                  document.getElementById('tel').focus();
+                  return false;
+              }
+          }
+          if (!email){
+              alert('請填入您的Email!');
+              document.getElementById('email').focus();
+              return false;
+          }else{
+              var regExp = /^[^@^\s]+@[^\.@^\s]+(\.[^\.@^\s]+)+$/;
+              if ( email.match(regExp) ){
+              }else{
+                  alert('Email不合規則!');
+                  document.getElementById('email').focus();
+                  return false;
+              }
+          }
+          if (age == 0){
+              alert('請選擇年齡!');
+              document.getElementById('age').focus();
+              return false;
+          }
+          if (sitem == 0){
+              alert('請選擇免費索取項目!');
+              document.getElementById('sitem').focus();
+              return false;
+          }
+          if (chkido == false){
+              alert('我已閱讀並同意活動辦法請打勾!');
+              document.getElementById('chkido').focus();
+              return false;
+          }
+          $j.post('event_deal.php', {realname: realname, tel: tel, email: email, age: age, sitem: sitem}, function(data){
+                  var result = data.split(' ');
+                  switch (result[0]){
+                      case '1':
+                      case '2':
+                      case '9':
+                          alert(result[1]);
+                          document.getElementById('realname').value = '';
+                          document.getElementById('tel').value = '';
+                          document.getElementById('email').value = '';
+                          document.getElementById('age').value = '';
+                          document.getElementById('sitem').value = '';
+                          document.getElementById('C1').checked = false;
+                          document.getElementById('C2').checked = false;
+                          document.getElementById('C3').checked = false;                          var qaform = document.getElementById('qaform');
+                          qaform.style.display = '';
+                          var popok = document.getElementById('popqaok');
+                          popok.style.display = 'none';
+                      break;
+                      case '3':
+                          alert(result[1]);
+                      break;
+                  }
+          });
+
+      }
+      var $j = jQuery.noConflict();
+      </script>
+      <!--wrong-->
+      
+        <div class="sceng1" id="popqaerr" style="position:absolute; display:none;">
+          <p><b>英文小學堂</b><i> / 天天送200元</i></p>
+          <p class="msg">歐 ERROR!!</p>
+          <p class="txt"><a href="http://4c.pchome.com.tw/campaign/2012/xxx/redirect.php?sw=61" target="_blank">一次報名  立即享受10堂課程</a></p>
+          <span><a href="javascript:void(0);" onclick="var qaform = document.getElementById('qaform');qaform.style.display = '';var poperr = document.getElementById('popqaerr');poperr.style.display = 'none';"><img src="http://www.pchome.com.tw/img/banner-08.gif" width="53" height="20" border="0" align="absmiddle"></a></span>
+        </div>      <!--right-->
+      
+        <div class="sceng1" id="popqaok" style="position:absolute; display:none;">
+         <p><b class="ok">恭喜答對了!</b><i class="ck"><input type="checkbox" name="chkido" id="chkido" checked=true><u class="te">我已閱讀並同意活動辦法載名事項,並同意資料提供TutorABC,供產品資訊及服務使用。</u></i></p>
+         <p class="fo">姓名:<input type="text" id="realname" name="realname" size="5">手機:<input type="text" id="tel" name="tel" size="5" maxlength="10">EMAIL:<input type="text" id="email" name="email" size="9"></p>
+         <p class="op">
+          <select name="age" id="age">
+          <option value="0">=年齡=</option>
+          <option value="1">16-20歲</option>
+          <option value="2">21-25歲</option>
+          <option value="3">26-30歲</option>
+          <option value="4">31-35歲</option>
+          <option value="5">36-40歲</option>
+          <option value="6">40歲以上</option>
+          </select>
+          <select name="sitem" id="sitem">
+          <option value="0">=== 請選擇 ===</option>
+          <option value="1">旅遊必學英文精選</option>
+          <option value="2">自我語言程度分析測驗</option>
+          <option value="3">免費線上英文體驗課程</option>
+          <option value="4">暫不索取</option>
+          <option value="5">商業英文簡報寶典</option>
+          <option value="6">商用英文書信寫作秘訣</option>
+          <option value="7">國際商業禮儀指南</option>
+          </select>
+          <img src="http://www.pchome.com.tw/img/banner-02.gif" name="banner" onclick="ED_writeform()" style="cursor:pointer;">
+         </p>
+        </div><div class="sceng1" id="qaform" style="position:absolute; display:;">
+                  <p><b>英文小學堂</b><i> / 天天送200元</i><u><a href="http://www.pchome.com.tw/event_20120831/index.html" target="_blank">今日闖關340人</a></u></p>
+                  <form name="QA_act_form" id="QA_act_form"><p>冰原歷險記中『長毛象』的英文是？</p>
+                    <input id="C1" type="radio" name="choice"><label>mammot</label>
+                    <input id="C2" type="radio" name="choice"><label>elephant</label>
+                    <input id="C3" type="radio" name="choice"><label>hydrometeor</label>
+                  </form>
+                  <span><a href="javascript:ED_QA_ACT()"><img src="http://www.pchome.com.tw/img/banner-02.gif" name="b"></a><br><a href="http://www.pchome.com.tw/event_20120831/index.html#intro" target="_blank">看得獎</a></span>
+                  </div>      <!--每日一問活動 End-->
+
+      <!-- 右欄 t-bar start -->
+      <aside class="right_ad26" id="ad_flow"><!-- 26_pchome_online_h start --><!-- 26_pchome_online_h start --><script language="JavaScript" src="js/PChomeFS.js"></script><script language="JavaScript">  var obj = new Object();    obj.flash_adno = "323867";    obj.flash_file = "http://w6.pchome.com.tw/adpics/pic_323867_197125.swf";    obj.flash_args = "ad_url=http://adcl.pchome.com.tw/clickAd2.html?q=26~pchome_online_h~323867,ad_target=_blank,ad_no=" + obj.flash_adno;    obj.flash_ad_url = "http://adcl.pchome.com.tw/clickAd2.html?q=26~pchome_online_h~323867";    obj.flash_ad_target = "_blank";    obj.flash_ad_no = obj.flash_adno;    obj.flash_width = 350;    obj.flash_height = 100;    obj.wmode = "opaque";  createTouchSWF(obj);</script><script language="JavaScript"></script><!-- 26_pchome_online_h end --><!-- 26_pchome_online_h end --></aside>
+      <!-- 右欄 t-bar end -->
+	</div>
+    <!-- 右欄置頂 擴張tbar + 每日一問 end -->
+
+    <!-- 右欄 大看板 start -->
+    <aside class="right_ad11">
+    <!-- 11_pchome_online_h start --><a href="http://adcl.pchome.com.tw/clickAd2.html?q=11~pchome_online_h~313602" target="_blank"><img border="0" src="http://w6.pchome.com.tw/adpics/pic_313602_193786.jpg" /></a><!-- 11_pchome_online_h end -->    </aside>
+    <!-- 右欄 大看板 end -->
+
+    <!-- 右欄 大買家頁籤 start -->
+    <aside class="right_ad78">
+        <span class="tblogo"><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_default~321846" target="_blank"><img src="http://www.pchome.com.tw/img/savesafeicon.gif" style="margin:3px 0 0 0;"></a></span>
+        <!-- 78_pchome_online_h start --><!-- 78_pchome_online_h start --><!-- block01 --><span class="tboff" name="ad_page" onMouseover="page_move(this);">破盤年終慶</span><div class="block1" id="sstabnew01" name="ad_page_cont">  <ul>  <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~321821" target="_blank"><img src="http://w6.pchome.com.tw/adpics/pic_321820_197401.jpg"></a><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~321822" target="_blank"><b>搶先預購中！！</b></a></li>  <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~321823" target="_blank"><img src="http://w6.pchome.com.tw/adpics/pic_321820_197523.jpg"></a><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~321824" target="_blank"><b>萬用壓力鍋1880</b></a></li>  <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~321825" target="_blank"><img src="http://w6.pchome.com.tw/adpics/pic_321820_198946.jpg"></a><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~321826" target="_blank"><b>3件組↘2580</b></a></li>  <li class="list">．<a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~321827" target="_blank">S5830降破5千</a></li>  <li class="list">．<a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~321828" target="_blank">氣炸鍋不到4千</a></li>  <li class="list">．<a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~321829" target="_blank">負10度睡袋889</a></li>  <li class="list">．<a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~321830" target="_blank">62L防潮箱1990</a></li>  <li class="list">．<a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~321831" target="_blank">7kg洗衣機7280</a></li>  <li class="list">．<a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~321832" target="_blank">行車記錄器799</a></li>  </ul></div><!-- block01 -->       <script language="JavaScript">       </script><!-- block02 --><span class="tboff" name="ad_page" onMouseover="page_move(this);">絕對低價</span><div class="block2" id="sstabnew02" name="ad_page_cont">  <ul>  <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~321834" target="_blank"><img src="http://w6.pchome.com.tw/adpics/pic_321833_197525.jpg"></a><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~321835" target="_blank"><b>獨家百本書籍全面46折</b></a></li>  <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~321836" target="_blank"><img class="border1" src="http://w6.pchome.com.tw/adpics/pic_321833_197524.jpg"></a><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~321837" target="_blank"><b>年終破盤↘超低價回饋</b></a></li>  <li class="list">．<a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~321838" target="_blank">孫芸芸推薦全效修護雙效組</a></li>  <li class="list">．<a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~321839" target="_blank">名模衣櫃200款冬衣↘88元</a></li>  <li class="list">．<a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~321840" target="_blank">跨名店美食任選$499免運</a></li>  <li class="list">．<a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~321841" target="_blank">省★包屁褲1件不到50元</a></li>  </ul></div><!-- block02 -->  <script language="JavaScript">  </script><!-- block03 --><span class="tbon" name="ad_page" onMouseover="page_move(this);">秒殺↘1折</span><div class="block3" id="sstabnew03" name="ad_page_cont">  <ul>  <li class="tit"><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~321843" target="_blank">滿額送現金>>滿2000元送100元現金紅利</a></li>  <li class="img"><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~321844" target="_blank"><img src="http://w6.pchome.com.tw/adpics/pic_321842_197526.jpg"></a></li>  <li class="txt"><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~321845" target="_blank"><b>領先各平台 破盤 10W ↘一顆只要$219 </b><p>100%台灣製造★2年保固>>省錢 X 省電 X 愛地球</p><p><i>$219元</i>/顆<u>>馬上搶購</u></p></a></li>  </ul></div><!-- block03 -->  <script language="JavaScript">  </script><!-- 78_pchome_online_h end --><!-- 78_pchome_online_h end -->
+        <script language="javascript">
+        function getElementsByName_iefix(tag, name) {
+            var elem = document.getElementsByTagName(tag);
+            var arr = new Array();
+            for(i = 0,iarr = 0; i < elem.length; i++) {
+                att = elem[i].getAttribute("name");
+                if(att == name) {
+                    arr[iarr] = elem[i];
+                    iarr++;
+                }
+            }
+            return arr;
+        }
+        var AdPage = getElementsByName_iefix("span","ad_page");
+        var AdPageCont = getElementsByName_iefix("div","ad_page_cont");
+        var AdCount = AdPage.length;
+        var radom = Math.floor(Math.random()*113);
+
+        function page_move(pos) {
+          for(j=0;j<AdCount;j++){
+            if (AdPage[j] == pos){
+                AdPage[j].className = 'tbon';
+                AdPageCont[j].style.visibility = 'visible';
+            } else {
+                AdPage[j].className = 'tboff';
+                AdPageCont[j].style.visibility = 'hidden';
+            }
+          }
+        }
+        page_move(AdPage[0]);
+        </script>
+    </aside>
+    <!-- 右欄 大買家頁籤 end -->
+
+    <!-- 右欄 EC專區 三圖三標 start -->
+    <aside class="right_ad65">
+      <ul>
+        <li><!-- 61_pchome_online_h start --><!-- 61_pchome_online_h start --><div class="right_adec"><b><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~296166" target="_blank">Fashion Cookie</a></b><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~296167" target="_blank"><img src="http://w6.pchome.com.tw/adpics/20121017093633_31376.jpg"><p>專業線上訂製襯衫↘899起</p></a></div><script language="JavaScript"></script><!-- 61_pchome_online_h end --><!-- 61_pchome_online_h end --></li>
+        <li><!-- 62_pchome_online_h start --><!-- 62_pchome_online_h start --><div class="right_adec"><b><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~327980" target="_blank">momo購物網 </a></b><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~327981" target="_blank"><img src="http://w6.pchome.com.tw/adpics/20121210172513_73330.jpg"><p>橘子工坊洗潔精2入↘299 </p></a></div><script language="JavaScript"></script><!-- 62_pchome_online_h end --><!-- 62_pchome_online_h end --></li>
+        <li class="lastli"><!-- 63_pchome_online_h start --><!-- 63_pchome_online_h start --><div class="right_adec"><b><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~325136" target="_blank">燦星旅遊</a></b><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~325137" target="_blank"><img src="http://w6.pchome.com.tw/adpics/20121205172703_77625.jpg"><p>北海道看企鵝漫步、雪地嬉戲</p></a></div><script language="JavaScript"></script><!-- 63_pchome_online_h end --><!-- 63_pchome_online_h end --></li>
+        <li><!-- 64_pchome_online_h start --><!-- 64_pchome_online_h start --><div class="right_adec"><b><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~293894" target="_blank">樂屋網</a></b><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~293895" target="_blank"><img src="http://w6.pchome.com.tw/adpics/20121003194550_70148.jpg"><p>中科裁員1300人!大台中房價的</p></a></div><script language="JavaScript"></script><!-- 64_pchome_online_h end --><!-- 64_pchome_online_h end --></li>
+        <li><!-- 65_pchome_online_h start --><!-- 65_pchome_online_h start --><div class="right_adec"><b><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~293847" target="_blank">旅行團 </a></b><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~293848" target="_blank"><img src="http://w6.pchome.com.tw/adpics/20121004102720_86638.jpg"><p>破盤大清倉↘出遊6折 </p></a></div><script language="JavaScript"></script><!-- 65_pchome_online_h end --><!-- 65_pchome_online_h end --></li>
+        <li class="lastli"><!-- 66_pchome_online_h start --><!-- 66_pchome_online_h start --><div class="right_adec"><b><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~326257" target="_blank">買車</a></b><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_online_h~326258" target="_blank"><img src="http://w6.pchome.com.tw/adpics/20121207150437_59574.jpg"><p>Honda Super CR-V 新車試駕</p></a></div><script language="JavaScript"></script><!-- 66_pchome_online_h end --><!-- 66_pchome_online_h end --></li>
+      </ul>
+    </aside>
+	<!-- 右欄 EC專區 三圖三標 end -->
+
+	<!-- 右欄 生活人氣王 消費情報 start -->
+    <div class="right_adlist">
+      <aside class="right_ad45">
+        <b>生活人氣王</b>
+        <!-- 45_pchome_index_A start --><!-- 45_pchome_index_A start --><span><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_A~325612" target="_blank"><img src="http://w6.pchome.com.tw/adpics/pic_325611_198113.jpg"></a><ul>  <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_A~325613" target="_blank">降！獨立筒床墊↘2488</a></li><li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_A~325614" target="_blank">萊翠美★葉黃素↙4折</a></li>  <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_A~325615" target="_blank">1件不到$50童造型褲</a></li><li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_A~325616" target="_blank">洪瑞珍三明治↘2盒559</a></li>  <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_A~325617" target="_blank">6.4元↘衛生紙最低價</a></li><li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_A~325618" target="_blank">獨家★機車24期0利率</a></li></ul></span>  <script language="JavaScript">  </script><!-- 45_pchome_index_A end --><!-- 45_pchome_index_A end -->
+        <!-- 45_pchome_index_B start --><!-- 45_pchome_index_B start --><span><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_B~325471" target="_blank"><img src="http://w6.pchome.com.tw/adpics/pic_325470_197898.jpg"></a><ul>  <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_B~325472" target="_blank">沖繩天天出發11500起</a></li><li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_B~325473" target="_blank">藏王樹冰早鳥省3000</a></li>  <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_B~325474" target="_blank">北海道雪祭特賣省3000</a></li><li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_B~325475" target="_blank">首爾雪白愛寶省10000</a></li>  <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_B~325476" target="_blank">九州入住豪斯登堡2晚</a></li><li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_B~325477" target="_blank">沙巴雨林.遊螢河5日</a></li></ul></span><script language="JavaScript"></script><!-- 45_pchome_index_B end --><!-- 45_pchome_index_B end -->
+        <!-- 45_pchome_index_C start --><!-- 45_pchome_index_C start --><span><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_C~326244" target="_blank"><img src="http://w6.pchome.com.tw/adpics/pic_326243_198324.jpg"></a><ul>  <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_C~326245" target="_blank">攻陷俏麗女上司就靠它</a></li><li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_C~326246" target="_blank">三星筆電 有筆更厲害</a></li>  <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_C~326247" target="_blank">美女有難!救人贏大獎</a></li><li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_C~326248" target="_blank">質感型男密技大公開</a></li>  <li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_C~326249" target="_blank">最新爆紅NB 0 元</a></li><li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_C~326250" target="_blank">smart PC免費拿</a></li></ul></span><script language="JavaScript"></script><!-- 45_pchome_index_C end --><!-- 45_pchome_index_C end -->
+      </aside>
+      <aside class="right_ad48">
+      <!-- 48_new_online_h_project start -->
+      <b>消費情報</b>
+      <!-- 48_pchome_index_A start --><!-- 48_pchome_index_A start --><span><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_A~321773" target="_blank"><img src="http://w6.pchome.com.tw/adpics/pic_321772_196507.jpg"></a><ul><li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_A~321774" target="_blank">實木穿鞋椅528</a></li><li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_A~321775" target="_blank">打敗飢餓就靠它</a></li><li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_A~321776" target="_blank">青春露加大版↘</a></li></ul></span><script language="JavaScript"></script><!-- 48_pchome_index_A end --><!-- 48_pchome_index_A end -->
+      <!-- 48_pchome_index_B start --><!-- 48_pchome_index_B start --><span><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_B~325536" target="_blank"><img src="http://w6.pchome.com.tw/adpics/pic_325535_197908.jpg"></a><ul><li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_B~325537" target="_blank">歐洲聖誕團超殺</a></li><li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_B~325538" target="_blank">超值五星義大利</a></li><li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_B~325539" target="_blank">破冰船幸福極光</a></li></ul></span><script language="JavaScript"></script><!-- 48_pchome_index_B end --><!-- 48_pchome_index_B end -->
+      <!-- 48_pchome_index_C start --><!-- 48_pchome_index_C start --><span><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_C~321726" target="_blank"><img src="http://w6.pchome.com.tw/adpics/pic_321725_196502.jpg"></a><ul><li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_C~321727" target="_blank">Skype帶著走</a></li><li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_C~321728" target="_blank">打國際電話超省</a></li><li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_C~321729" target="_blank">好康一手抓</a></li></ul></span><script language="JavaScript"></script><!-- 48_pchome_index_C end --><!-- 48_pchome_index_C end -->
+      <!-- 48_pchome_index_D start --><!-- 48_pchome_index_D start --><span><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_D~322205" target="_blank"><img src="http://w6.pchome.com.tw/adpics/pic_322200_196578.jpg"></a><ul><li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_D~322206" target="_blank">兜風沖繩悠游趣</a></li><li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_D~322207" target="_blank">60飯店自由選</a></li><li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_D~322208" target="_blank">天天出發游沖繩</a></li></ul></span><script language="JavaScript"></script><!-- 48_pchome_index_D end --><!-- 48_pchome_index_D end -->
+      <!-- 48_pchome_index_E start --><!-- 48_pchome_index_E start --><span><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_E~326361" target="_blank"><img src="http://w6.pchome.com.tw/adpics/pic_326360_198465.jpg"></a><ul><li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_E~326362" target="_blank">仙侶雙修的途徑</a></li><li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_E~326363" target="_blank">最爽快的打擊感</a></li><li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_E~326364" target="_blank">橫版遊戲的經典</a></li></ul></span><script language="JavaScript"></script><!-- 48_pchome_index_E end --><!-- 48_pchome_index_E end -->
+      <!-- 48_pchome_index_F start --><!-- 48_pchome_index_F start --><span><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_F~324313" target="_blank"><img src="http://w6.pchome.com.tw/adpics/pic_324305_197364.jpg"></a><ul><li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_F~324314" target="_blank">豐田休旅39萬</a></li><li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_F~324315" target="_blank">凌志RX330降字</a></li><li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_F~324316" target="_blank">賓士七人坐75萬</a></li></ul></span><script language="JavaScript"></script><!-- 48_pchome_index_F end --><!-- 48_pchome_index_F end -->
+      <!-- 48_pchome_index_G start --><!-- 48_pchome_index_G start --><span><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_G~320513" target="_blank"><img src="http://w6.pchome.com.tw/adpics/pic_320512_195926.jpg"></a><ul><li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_G~320514" target="_blank">關於房事都在這</a></li><li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_G~320515" target="_blank">合宜宅好好住</a></li><li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_G~320516" target="_blank">住這就能讀台大</a></li></ul></span><script language="JavaScript"></script><!-- 48_pchome_index_G end --><!-- 48_pchome_index_G end -->
+      <!-- 48_pchome_index_H start --><!-- 48_pchome_index_H start --><span><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_H~326495" target="_blank"><img src="http://w6.pchome.com.tw/adpics/pic_326493_198497.gif"></a><ul><li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_H~326496" target="_blank">馬丁長靴300起</a></li><li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_H~326497" target="_blank">深V內衣120起</a></li><li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_H~326498" target="_blank">真皮iPad套</a></li></ul></span><script language="JavaScript"></script><!-- 48_pchome_index_H end --><!-- 48_pchome_index_H end -->
+      </aside>
+    </div>
+    <!-- 右欄 生活人氣王 消費情報 end -->
+  </div>
+  <!-- 右欄 end -->
+  <!-- 下欄 開始 -->
+  <div class="sidebar_bottom">
+    
+                    <!-- 旅行團 start -->
+                    <aside>
+                    <div class="bottom_travel">
+                    <!-- 59_pchome_index_A start --><!-- 59_pchome_index_A start --><div><ul><li class="img"><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_A~324397" target="_blank"><img src="http://w6.pchome.com.tw/adpics/pic_324395_197386.jpg" border="0"></a></li><li class="nam"><b><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_A~324398" target="_blank">燦星旅遊</a></b></li><li class="tit"><i><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_A~324399" target="_blank">迎新春。北海道冰上釣魚5日</a></i></li><li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_A~324400" target="_blank">日本三都住五星、大阪環球影城5日</a></li><li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_A~324401" target="_blank">春節去香港送你洋紫荊號自助餐</a></li><li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_A~324402" target="_blank">戀戀深度波希米亞德國、捷克10日</a></li></ul></div><script language="JavaScript"></script><!-- 59_pchome_index_A end --><!-- 59_pchome_index_A end -->
+                    <!-- 59_pchome_index_B start --><!-- 59_pchome_index_B start --><div><ul><li class="img"><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_B~324366" target="_blank"><img src="http://w6.pchome.com.tw/adpics/pic_324365_197380.jpg" border="0"></a></li><li class="nam"><b><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_B~324367" target="_blank">可樂旅遊</a></b></li><li class="tit"><i><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_B~324368" target="_blank">狂博變形金剛＞決戰名勝世界</a></i></li><li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_B~324369" target="_blank">日本北陸冬季特賣會最低19800元起</a></li><li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_B~324370" target="_blank">破盤殺！加拿大絕美雙堡超值特賣！</a></li><li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_B~324371" target="_blank">旅展加碼！自由行最高省三千！</a>li></ul></div><script language="JavaScript"></script><!-- 59_pchome_index_B end --><!-- 59_pchome_index_B end -->
+                    <!-- 59_pchome_index_C start --><!-- 59_pchome_index_C start --><div><ul><li class="img"><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_C~324335" target="_blank"><img src="http://w6.pchome.com.tw/adpics/pic_324330_197374.jpg" border="0"></a></li><li class="nam"><b><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_C~324336" target="_blank">鳳凰旅遊</a></b></li><li class="tit"><i><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_C~324337" target="_blank">寒假過年夏威夷(包機直飛)</a></i></li><li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_C~324338" target="_blank">秘密奢華~峇里島渡假去(兩人成行)</a></li><li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_C~324339" target="_blank">ClubMed北海道5天一日食宿免費</a></li><li><a href="http://adcl.pchome.com.tw/clickAd2.html?q=6~pchome_index_C~324340" target="_blank">德國限定團8萬有找2013好康特賣會</a></li></ul></div><script language="JavaScript"></script><!-- 59_pchome_index_C end --><!-- 59_pchome_index_C end -->
+                    </div>
+                    </aside>
+                    <!-- 旅行團 end -->
+    <!--MOMO廣告特開 START-->
+    <style type="text/css">
+    .bottom_slides2{position:relative;display:block; border:1px #dcdcdc solid;width:978px; height:180px;margin:10px 0 10px 0;}
+    .bottom_slides2 b{display:block;height:27px;line-height:27px;padding:0 34px;color:#000;font-size:12px;margin:0 750px 0 0;float:left}
+    .bottom_slides2 b u{text-decoration:none; padding:0 5px;color:#4d4d4d}
+    .bottom_slides2 .slides_container2 {float:center;width:910px;height:148px;overflow: hidden;margin: 30px;}
+    .bottom_slides2 .slides_container2 .inner{display:block;width:910px;height:148px;margin:auto;}
+    .bottom_slides2 .slides_container2 .inner span{display:block;float:left;width:130px;height:148px}
+    .bottom_slides2 .slides_container2 .inner span img {border:1px #dcdcdc solid}
+    .bottom_slides2 .slides_container2 .inner span p {display:block;width:120px;height:120px;text-align:center;overflow:hidden;border-right:1px #dcdcdc solid;border-bottom:1px #dcdcdc solid}
+    .bottom_slides2 .slides_container2 .inner span p img{border:none;width:120px;height:120px}
+    .bottom_slides2 .slides_container2 .inner span i {display:block;width:120px;height:18px;line-height:18px;text-align:center;font-style:normal;overflow:hidden;}
+    </style>
+    <div id="photo_slides2" class="bottom_slides2">
+        <b>今日HOT專區</b>
+        <div class="slides_container2">
+          <div class="inner">
+            <script>
+            var ridx;
+            ridx = Math.floor(Math.random() * 3);
+            switch (ridx){
+                case 0:
+                case 1:
+                    document.writeln('<span><a href="http://4c.pchome.com.tw/campaign/2012/momo/redirect.php?sw=1024" target="_blank"><p><img src="http://link.photo.pchome.com.tw/s11/home_guest/42/135513339189/"></p><i>厚棉刷毛T/外套特賣</i></a></span><span><a href="http://4c.pchome.com.tw/campaign/2012/momo/redirect.php?sw=1025" target="_blank"><p><img src="http://link.photo.pchome.com.tw/s11/home_guest/42/135513339228/"></p><i>美腿寶貝抬腿枕↘424</i></a></span><span><a href="http://4c.pchome.com.tw/campaign/2012/momo/redirect.php?sw=1026" target="_blank"><p><img src="http://link.photo.pchome.com.tw/s11/home_guest/42/135513339250/"></p><i>【dyson限量福利品】</i></a></span><span><a href="http://4c.pchome.com.tw/campaign/2012/momo/redirect.php?sw=1027" target="_blank"><p><img src="http://link.photo.pchome.com.tw/s11/home_guest/42/135513339284/"></p><i>專櫃內衣限量激殺↘</i></a></span><span><a href="http://4c.pchome.com.tw/campaign/2012/momo/redirect.php?sw=1028" target="_blank"><p><img src="http://link.photo.pchome.com.tw/s11/home_guest/42/135513339312/"></p><i>麥雪爾秋冬特賣990起</i></a></span><span><a href="http://4c.pchome.com.tw/campaign/2012/momo/redirect.php?sw=1029" target="_blank"><p><img src="http://link.photo.pchome.com.tw/s11/home_guest/42/135513339336/"></p><i>微電腦電熱毯↘1280</i></a></span><span><a href="http://4c.pchome.com.tw/campaign/2012/momo/redirect.php?sw=1030" target="_blank"><p><img src="http://link.photo.pchome.com.tw/s11/home_guest/42/135513339359/"></p><i>瑞士康緹植萃霜$990</i></a></span>');
+                break;
+                case 2:
+                    document.writeln('<span><a href="http://4c.pchome.com.tw/campaign/2012/itf/redirect.php?sw=781" target="_blank"><p><img src="http://link.photo.pchome.com.tw/s11/home_guest/27/135220262297/"></p><i>長灘島第二人省2千</i></a></span><span><a href="http://4c.pchome.com.tw/campaign/2012/itf/redirect.php?sw=783" target="_blank"><p><img src="http://link.photo.pchome.com.tw/s11/home_guest/27/135220262321/"></p><i>東京親子雙樂園!寒假夯</i></a></span><span><a href="http://4c.pchome.com.tw/campaign/2012/itf/redirect.php?sw=782" target="_blank"><p><img src="http://link.photo.pchome.com.tw/s11/home_guest/27/135220262338/"></p><i>義大利11天!升等5星</i></a></span><span><a href="http://4c.pchome.com.tw/campaign/2012/itf/redirect.php?sw=781" target="_blank"><p><img src="http://link.photo.pchome.com.tw/s11/home_guest/27/135220262359/"></p><i>帛琉5日》3萬有找</i></a></span><span><a href="http://4c.pchome.com.tw/campaign/2012/itf/redirect.php?sw=782" target="_blank"><p><img src="http://link.photo.pchome.com.tw/s11/home_guest/27/135220262423/"></p><i>紐約跨年瘋血拼</i></a></span><span><a href="http://4c.pchome.com.tw/campaign/2012/itf/redirect.php?sw=781" target="_blank"><p><img src="http://link.photo.pchome.com.tw/s11/home_guest/27/135220262472/"></p><i>濟州3天!現抽i瘋5</i></a></span><span><a href="http://4c.pchome.com.tw/campaign/2012/itf/redirect.php?sw=781" target="_blank"><p><img src="http://link.photo.pchome.com.tw/s11/home_guest/27/135220262526/"></p><i>玩泰國!第二人省3千</i></a></span>');
+                break;
+                default:
+                    document.writeln('<span><a href="http://4c.pchome.com.tw/campaign/2012/momo/redirect.php?sw=1024" target="_blank"><p><img src="http://link.photo.pchome.com.tw/s11/home_guest/42/135513339189/"></p><i>厚棉刷毛T/外套特賣</i></a></span><span><a href="http://4c.pchome.com.tw/campaign/2012/momo/redirect.php?sw=1025" target="_blank"><p><img src="http://link.photo.pchome.com.tw/s11/home_guest/42/135513339228/"></p><i>美腿寶貝抬腿枕↘424</i></a></span><span><a href="http://4c.pchome.com.tw/campaign/2012/momo/redirect.php?sw=1026" target="_blank"><p><img src="http://link.photo.pchome.com.tw/s11/home_guest/42/135513339250/"></p><i>【dyson限量福利品】</i></a></span><span><a href="http://4c.pchome.com.tw/campaign/2012/momo/redirect.php?sw=1027" target="_blank"><p><img src="http://link.photo.pchome.com.tw/s11/home_guest/42/135513339284/"></p><i>專櫃內衣限量激殺↘</i></a></span><span><a href="http://4c.pchome.com.tw/campaign/2012/momo/redirect.php?sw=1028" target="_blank"><p><img src="http://link.photo.pchome.com.tw/s11/home_guest/42/135513339312/"></p><i>麥雪爾秋冬特賣990起</i></a></span><span><a href="http://4c.pchome.com.tw/campaign/2012/momo/redirect.php?sw=1029" target="_blank"><p><img src="http://link.photo.pchome.com.tw/s11/home_guest/42/135513339336/"></p><i>微電腦電熱毯↘1280</i></a></span><span><a href="http://4c.pchome.com.tw/campaign/2012/momo/redirect.php?sw=1030" target="_blank"><p><img src="http://link.photo.pchome.com.tw/s11/home_guest/42/135513339359/"></p><i>瑞士康緹植萃霜$990</i></a></span>');
+                break;
+            }
+            </script>
+          </div>
+        </div>
+    </div>
+    <!--MOMO廣告特開 End-->
+
+    <!--相簿 start-->
+	<div id="photo_slides" class="bottom_slides">
+                        <b>今日HOT專區<u id="pagename">| 人氣新聞</u></b>
+                        <a href="#" class="prev"><img src="http://www.pchome.com.tw/img/arrow-prev.gif"></a>
+                        <div class="slides_container"><div class="inner">
+                         <span><a href="http://www.pchome.com.tw/counter_footref.php?sid=1251332&url=http://news.pchome.com.tw/living/tvbs/20121211/index-13551840037131639002.html" target="_blank"><p><img src="http://w6.pchome.com.tw/img/slideshow/news/0.jpg"></p><i>嬰裝袋棄草叢 小爸媽殺人未遂起訴</i></a></span>
+                                 <span><a href="http://www.pchome.com.tw/counter_footref.php?sid=1251332&url=http://news.pchome.com.tw/healthcare/top1health/20121211/index-13551858004168468012.html" target="_blank"><p><img src="http://w6.pchome.com.tw/img/slideshow/news/1.jpg"></p><i>嬰幼兒7次健檢 守護健康一把罩</i></a></span>
+                                 <span><a href="http://www.pchome.com.tw/counter_footref.php?sid=1251332&url=http://news.pchome.com.tw/finance/cardu/20121211/index-13551813863088041003.html" target="_blank"><p><img src="http://w6.pchome.com.tw/img/slideshow/news/2.jpg"></p><i>景氣差企業外包量增 設計資訊類行情看俏</i></a></span>
+                                 <span><a href="http://www.pchome.com.tw/counter_footref.php?sid=1251332&url=http://news.pchome.com.tw/society/tvbs/20121211/index-13551916935234139002.html" target="_blank"><p><img src="http://w6.pchome.com.tw/img/slideshow/news/3.jpg"></p><i>非法吸金堆出鈔票山 重判12年</i></a></span>
+                                 <span><a href="http://www.pchome.com.tw/counter_footref.php?sid=1251332&url=http://news.pchome.com.tw/finance/cardu/20121211/index-13551830764232341003.html" target="_blank"><p><img src="http://w6.pchome.com.tw/img/slideshow/news/4.jpg"></p><i>租屋市場「蝸居」搶手 5坪以下點閱增1成</i></a></span>
+                                 <span><a href="http://www.pchome.com.tw/counter_footref.php?sid=1251332&url=http://news.pchome.com.tw/living/tvbs/20121211/index-13551810966322239009.html" target="_blank"><p><img src="http://w6.pchome.com.tw/img/slideshow/news/5.jpg"></p><i>車商上櫃前發表會 公布前三季營收</i></a></span>
+                                 <span><a href="http://www.pchome.com.tw/counter_footref.php?sid=1251332&url=http://news.pchome.com.tw/expense/cardu/20121211/index-13551820383867841013.html" target="_blank"><p><img src="http://w6.pchome.com.tw/img/slideshow/news/6.jpg"></p><i>近半數民眾喜新厭舊 手機未壞就換新機</i></a></span>
+                                 </div><div class="inner">
+                         <span><a href="http://www.pchome.com.tw/counter_footref.php?sid=1251331&url=http://photo.pchome.com.tw/hong5888/0455" target="_blank"><p><img src="http://w6.pchome.com.tw/img/slideshow/photo/1.jpg"></p><i>1010923八里</i></a></span>
+                                 <span><a href="http://www.pchome.com.tw/counter_footref.php?sid=1251331&url=http://photo.pchome.com.tw/liviac/066" target="_blank"><p><img src="http://w6.pchome.com.tw/img/slideshow/photo/2.jpg"></p><i>201112日本出差</i></a></span>
+                                 <span><a href="http://www.pchome.com.tw/counter_footref.php?sid=1251331&url=http://photo.pchome.com.tw/lovelykitty/01587" target="_blank"><p><img src="http://w6.pchome.com.tw/img/slideshow/photo/3.jpg"></p><i>日本京都-清</i></a></span>
+                                 <span><a href="http://www.pchome.com.tw/counter_footref.php?sid=1251331&url=http://photo.pchome.com.tw/sexling/0265" target="_blank"><p><img src="http://w6.pchome.com.tw/img/slideshow/photo/4.jpg"></p><i>新埔柿餅</i></a></span>
+                                 <span><a href="http://www.pchome.com.tw/counter_footref.php?sid=1251331&url=http://photo.pchome.com.tw/g3635701/085" target="_blank"><p><img src="http://w6.pchome.com.tw/img/slideshow/photo/5.jpg"></p><i>2012/09/23-</i></a></span>
+                                 <span><a href="http://www.pchome.com.tw/counter_footref.php?sid=1251331&url=http://photo.pchome.com.tw/dodotpy/065" target="_blank"><p><img src="http://w6.pchome.com.tw/img/slideshow/photo/6.jpg"></p><i>我愛萬聖節-</i></a></span>
+                                 <span><a href="http://www.pchome.com.tw/counter_footref.php?sid=1251331&url=http://photo.pchome.com.tw/gg0905/0617" target="_blank"><p><img src="http://w6.pchome.com.tw/img/slideshow/photo/7.jpg"></p><i>101.10.01松</i></a></span>
+                                 <span><a href="http://www.pchome.com.tw/counter_footref.php?sid=1251331&url=http://photo.pchome.com.tw/gg0905/0618" target="_blank"><p><img src="http://w6.pchome.com.tw/img/slideshow/photo/8.jpg"></p><i>101.10.06宜</i></a></span>
+                                 <span><a href="http://www.pchome.com.tw/counter_footref.php?sid=1251331&url=http://photo.pchome.com.tw/kchang_jj/0719" target="_blank"><p><img src="http://w6.pchome.com.tw/img/slideshow/photo/9.jpg"></p><i>1010921 荷</i></a></span>
+                                 <span><a href="http://www.pchome.com.tw/counter_footref.php?sid=1251331&url=http://photo.pchome.com.tw/470804/0633" target="_blank"><p><img src="http://w6.pchome.com.tw/img/slideshow/photo/10.jpg"></p><i>美的冒泡</i></a></span>
+                                 <span><a href="http://www.pchome.com.tw/counter_footref.php?sid=1251331&url=http://photo.pchome.com.tw/zxcvbnm55130823/0153" target="_blank"><p><img src="http://w6.pchome.com.tw/img/slideshow/photo/11.jpg"></p><i>樹影隨拍</i></a></span>
+                                 <span><a href="http://www.pchome.com.tw/counter_footref.php?sid=1251331&url=http://photo.pchome.com.tw/aven0801/0514" target="_blank"><p><img src="http://w6.pchome.com.tw/img/slideshow/photo/12.jpg"></p><i>Oct.10.212</i></a></span>
+                                 <span><a href="http://www.pchome.com.tw/counter_footref.php?sid=1251331&url=http://photo.pchome.com.tw/ycisa/0113" target="_blank"><p><img src="http://w6.pchome.com.tw/img/slideshow/photo/13.jpg"></p><i>2012/10/20</i></a></span>
+                                 <span><a href="http://www.pchome.com.tw/counter_footref.php?sid=1251331&url=http://photo.pchome.com.tw/mawzen/0226" target="_blank"><p><img src="http://w6.pchome.com.tw/img/slideshow/photo/14.jpg"></p><i>2012/11/24 </i></a></span>
+                                 <span><a href="http://www.pchome.com.tw/counter_footref.php?sid=1251331&url=http://photo.pchome.com.tw/zxcvbnm55130823/0160" target="_blank"><p><img src="http://w6.pchome.com.tw/img/slideshow/photo/15.jpg"></p><i>沙鹿之翼</i></a></span>
+                                 <span><a href="http://www.pchome.com.tw/counter_footref.php?sid=1251331&url=http://photo.pchome.com.tw/sexling/0258" target="_blank"><p><img src="http://w6.pchome.com.tw/img/slideshow/photo/16.jpg"></p><i>袖珍博物館</i></a></span>
+                                 <span><a href="http://www.pchome.com.tw/counter_footref.php?sid=1251331&url=http://photo.pchome.com.tw/savage294/063" target="_blank"><p><img src="http://w6.pchome.com.tw/img/slideshow/photo/17.jpg"></p><i>竹山.忘憂森林</i></a></span>
+                                 <span><a href="http://www.pchome.com.tw/counter_footref.php?sid=1251331&url=http://photo.pchome.com.tw/sonyeye/0737" target="_blank"><p><img src="http://w6.pchome.com.tw/img/slideshow/photo/18.jpg"></p><i>20121015墾</i></a></span>
+                                 </div><div class="inner">
+                         <span><a href="http://www.pchome.com.tw/counter_footref.php?sid=1251333&url=http://mypaper.pchome.com.tw/happycy/post/1323373568" target="_blank"><p><img src="http://w6.pchome.com.tw/img/slideshow/mypaper/1.jpg"></p><i>。一杯，人生。</i></a></span>
+                                 <span><a href="http://www.pchome.com.tw/counter_footref.php?sid=1251333&url=http://mypaper.pchome.com.tw/june780803/post/1323391404" target="_blank"><p><img src="http://w6.pchome.com.tw/img/slideshow/mypaper/2.jpg"></p><i>夢東籬</i></a></span>
+                                 <span><a href="http://www.pchome.com.tw/counter_footref.php?sid=1251333&url=http://mypaper.pchome.com.tw/miffy0713217/post/1323234575" target="_blank"><p><img src="http://w6.pchome.com.tw/img/slideshow/mypaper/3.jpg"></p><i>365-3 經不起熬夜</i></a></span>
+                                 <span><a href="http://www.pchome.com.tw/counter_footref.php?sid=1251333&url=http://mypaper.pchome.com.tw/sweetgarden2010/post/1323525146" target="_blank"><p><img src="http://w6.pchome.com.tw/img/slideshow/mypaper/4.jpg"></p><i>[ 溫哥華。食記 ] 魚翅撈飯吃過沒? ~ 金龍船酒家</i></a></span>
+                                 <span><a href="http://www.pchome.com.tw/counter_footref.php?sid=1251333&url=http://mypaper.pchome.com.tw/ericke/post/1323371191" target="_blank"><p><img src="http://w6.pchome.com.tw/img/slideshow/mypaper/5.jpg"></p><i>Paul早午餐~</i></a></span>
+                                 <span><a href="http://www.pchome.com.tw/counter_footref.php?sid=1251333&url=http://mypaper.pchome.com.tw/secretpage/post/1323362611" target="_blank"><p><img src="http://w6.pchome.com.tw/img/slideshow/mypaper/6.jpg"></p><i>出發前</i></a></span>
+                                 <span><a href="http://www.pchome.com.tw/counter_footref.php?sid=1251333&url=http://mypaper.pchome.com.tw/ycmoumou/post/1323327727" target="_blank"><p><img src="http://w6.pchome.com.tw/img/slideshow/mypaper/7.jpg"></p><i>2012 10 18 新庄子 - 風化腐蝕的木造步道</i></a></span>
+                                 <span><a href="http://www.pchome.com.tw/counter_footref.php?sid=1251333&url=http://mypaper.pchome.com.tw/fromjack22/post/1323253497" target="_blank"><p><img src="http://w6.pchome.com.tw/img/slideshow/mypaper/8.jpg"></p><i>白花紅果　</i></a></span>
+                                 <span><a href="http://www.pchome.com.tw/counter_footref.php?sid=1251333&url=http://mypaper.pchome.com.tw/660729/post/1323283225" target="_blank"><p><img src="http://w6.pchome.com.tw/img/slideshow/mypaper/9.jpg"></p><i>玩樂濟州Day 4 一定要吃到的濟州超鮮烤貝海鮮湯【海鮮店】</i></a></span>
+                                 </div><div class="inner">
+                         <span><a href="http://www.pchome.com.tw/counter_footref.php?sid=1251334&url= http://beauty.pchome.com.tw/myroom/evenbow9/article/1323279099/ " target="_blank"><p><img src="http://w6.pchome.com.tw/img/slideshow/beauty/1.jpg"></p><i> +ONE%5000倍微元素保濕組+水噹噹的好物大集合 ~~~ 打造100%以上美麗的高CP值保養
+                  
+    </i></a></span>
+                                 <span><a href="http://www.pchome.com.tw/counter_footref.php?sid=1251334&url= http://beauty.pchome.com.tw/myroom/janneywu/article/1323271883/ " target="_blank"><p><img src="http://w6.pchome.com.tw/img/slideshow/beauty/2.jpg"></p><i> 我的美肌補水站 - BeautyDiy 欖仁果極潤保濕活水凝露
+                  
+                  最近早晚的 </i></a></span>
+                                 <span><a href="http://www.pchome.com.tw/counter_footref.php?sid=1251334&url= http://beauty.pchome.com.tw/myroom//article/1323128879/ " target="_blank"><p><img src="http://w6.pchome.com.tw/img/slideshow/beauty/3.jpg"></p><i> 【試吃】來，喝一杯堅果吧！桂格堅果多多。
+                  
+                  家裏習慣存放些可快速 </i></a></span>
+                                 <span><a href="http://www.pchome.com.tw/counter_footref.php?sid=1251334&url= http://beauty.pchome.com.tw/myroom/zzz1929/article/1323313617/ " target="_blank"><p><img src="http://w6.pchome.com.tw/img/slideshow/beauty/4.jpg"></p><i> 愛地球複方精油～海洋污染
+                  
+                  每年九月份一定要做的事情，就是去伊聖 </i></a></span>
+                                 <span><a href="http://www.pchome.com.tw/counter_footref.php?sid=1251334&url= http://beauty.pchome.com.tw/myroom/kn557/article/1323270125/ " target="_blank"><p><img src="http://w6.pchome.com.tw/img/slideshow/beauty/5.jpg"></p><i> VIVI萬歲牌燕麥堅果飲(杏仁蓮子、核桃紅豆、堅果纖蔬、南瓜子芝麻燕麥)
+                  
+           </i></a></span>
+                                 <span><a href="http://www.pchome.com.tw/counter_footref.php?sid=1251334&url= http://beauty.pchome.com.tw/myroom/pink_angel40/article/1323269673/ " target="_blank"><p><img src="http://w6.pchome.com.tw/img/slideshow/beauty/6.jpg"></p><i> 邀搞秋冬之際美白保濕不能少~潤霈,晶亮水潤美白面膜
+                  
+                  OH~YEAH!Fi </i></a></span>
+                                 <span><a href="http://www.pchome.com.tw/counter_footref.php?sid=1251334&url= http://beauty.pchome.com.tw/myroom/emily13isme/article/1323269459/ " target="_blank"><p><img src="http://w6.pchome.com.tw/img/slideshow/beauty/7.jpg"></p><i> 2012年度盛會FG Woman Party@小山堂
+                  
+                  日前參加了FG舉辦的年度盛事- </i></a></span>
+                                 <span><a href="http://www.pchome.com.tw/counter_footref.php?sid=1251334&url= http://beauty.pchome.com.tw/myroom/0may7033/article/1323364317/ " target="_blank"><p><img src="http://w6.pchome.com.tw/img/slideshow/beauty/8.jpg"></p><i> Cosmo Box~日本來的超*質*寶盒
+                  
+                  來自日本的美妝盒子 來台灣了說 哈 </i></a></span>
+                                 </div></div>
+    <a href="#" class="next"><img src="http://www.pchome.com.tw/img/arrow-next.gif"></a>
+    </div>
+    <script>
+    $j(function(){
+    	var ta=['...','| 人氣新聞','| 人氣相簿','| 人氣文章','| 人氣照片'];
+    	var pa=$j('#pagename');
+    	var startid = 1;
+    	pa.text(ta[startid]);
+        $j('#photo_slides').slides({
+            preload: true,
+            preloadImage: 'http://www.pchome.com.tw/img/loading.gif',
+            play: 5000,
+            pause: 2500,
+            hoverPause: true,
+    		start: startid,
+    		animationComplete: function(current) {
+    			pa.text(ta[(current)]);
+    		}
+        });
+    });
+    </script>    <!--相簿 end-->
+  </div>
+  <!-- 下欄 結束 -->
+  <!-- 頁尾 開始 -->
+  <footer>
+  <div class="footer_nav">
+    <span><a href="http://www.pchome.com.tw/counter.php?sid=804">廣告刊登</a>|</span>
+    <span><a href="http://www.pchome.com.tw/counter.php?sid=809">隱私權聲明</a>|</span>
+    <span><a href="http://www.pchome.com.tw/counter.php?sid=810" target="_blank">消費者保護</a>|</span>
+    <span><a href="http://www.pchome.com.tw/counter.php?sid=812">兒童網路安全</a>|</span>
+    <span><a href="http://www.pchome.com.tw/counter.php?sid=814">About PChome</a>|</span>
+    <span><a href="http://www.pchome.com.tw/counter.php?sid=815">投資人聯絡</a>|</span>
+    <span><a href="http://www.pchome.com.tw/counter.php?sid=816">徵才</a></span>
+  </div>
+  <div class="footer_copy"><a href="http://www.pchome.com.tw/counter.php?sid=617797">著作權保護</a> | 網路家庭版權所有、轉載必究 ‧Copyright  PChome Online | <a href="http://www.pchome.com.tw/counter.php?sid=957">HiNet 主機代管</a>．本站已依<a href="http://www.pchome.com.tw/counter.php?sid=812">網站內容分級</a>處理<p>PChome Online and PChome are trademarks of PChome Online Inc.</p></div>
+  </footer>
+  <!-- 頁尾 結束 -->
+</div>
+<!-- 上欄 左欄 中欄 下欄 頁尾 end -->
+</div>
+<!-- 首頁大框架 end -->
+</div>
+<!--<script type="text/javascript" src="http://adcl.pchome.com.tw:80/getAd2JS.html?type=43&channel=pchome_online_h&encoding=Utf8"></script>
+<script type="text/javascript" src="http://adcl.pchome.com.tw:80/getAd2JS.html?type=44&channel=pchome_online_h&encoding=Utf8"></script>-->
+</body>
+</html>
