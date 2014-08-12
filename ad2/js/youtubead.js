@@ -40,6 +40,14 @@ function playing(){
    $("#youtube").show();
 }
 
+function mute() {
+    player.mute()
+}
+
+function unmute() {
+    player.unMute()
+}
+
 $(document).ready(function(){
    loadYtplayer();
 });
