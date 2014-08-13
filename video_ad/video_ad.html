@@ -1,0 +1,353 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<title>video_ad</title>
+<style>
+    body, ul, ol, li, dl, dd, p, h1, h2, h3, h4, h5, h6, form, fieldset, .pr, .pc {
+        margin: 0;
+        padding: 0;
+    }
+
+    .videoFocus {
+        margin: 0 auto;
+        position: relative;
+        width: 1000px;
+    }
+
+    .videoitemL, .videoitemR {
+        z-index: 999;
+        top: 0;
+        width: 220px;
+        height: 315px;
+        position: absolute;
+    }
+
+    .videoitemL {
+        left: 0;
+    }
+
+    .videoitemR {
+        right: 0;
+    }
+
+    .videoitem img {
+        width: 220px;
+        height: 315px;
+    }
+
+    .modPplayerBox {
+        position: relative;
+        width: 1000px;
+        height: 315px;
+    }
+
+    .modPplayerBox img {
+        width: 1000px;
+        height: 315px;
+    }
+
+    .modActionBar {
+        position: absolute;
+        right: 220px;
+        bottom: 0;
+        height: 32px;
+        padding-top: 10px;
+        width: 130px;
+        background: rgba(0, 0, 0, 0.7);
+        z-index:3;
+    }
+
+    .closeAdBtn, .turnOffSound, .turnOnSound {
+        background-image: url(http://sla.ckcdn.com/staticx3/image/common/video_ad_btn.png);
+        background-repeat: no-repeat;
+    }
+
+    .closeAdBtn {
+        width: 76px;
+        padding-left: 18px;
+        float: left;
+        background-color: rgba(0, 0, 0, 0.7);
+        margin: 0 10px 0 15px;
+        height: 22px;
+        border: 1px solid #fff;
+        color: #fff;
+        background-position: 0 -1px;
+        font-size: 13px;
+    }
+
+    .turnOffSound, .turnOnSound {
+        width: 14px;
+        height: 18px;
+        float: left;
+        margin-top: 2px;
+        display: block;
+        text-indent: -999em;
+    }
+
+    .turnOffSound {
+        background-position: left -41px;
+    }
+
+    .turnOnSound {
+        background-position: left -74px;
+    }
+
+    .videoADImg {
+        width: 980px;
+        margin: 10px auto;
+        clear: both;
+        position: relative;
+    }
+
+    .playAdBtn {
+        background: rgba(0, 0, 0, 0.7);
+        width: 65px;
+        text-align: center;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        height: 22px;
+        border: 1px solid #fff;
+        color: #fff;
+        font-size: 13px;
+    }
+
+</style>
+<script id="google-jquery" type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script>
+    (function (factory) {
+        if (typeof define === 'function' && define.amd) {
+            // AMD
+            define(['jquery'], factory);
+        } else if (typeof exports === 'object') {
+            // CommonJS
+            factory(require('jquery'));
+        } else {
+            // Browser globals
+            factory(jQuery);
+        }
+    }(function ($) {
+
+        var pluses = /\+/g;
+
+        function encode(s) {
+            return config.raw ? s : encodeURIComponent(s);
+        }
+
+        function decode(s) {
+            return config.raw ? s : decodeURIComponent(s);
+        }
+
+        function stringifyCookieValue(value) {
+            return encode(config.json ? JSON.stringify(value) : String(value));
+        }
+
+        function parseCookieValue(s) {
+            if (s.indexOf('"') === 0) {
+                // This is a quoted cookie as according to RFC2068, unescape...
+                s = s.slice(1, -1).replace(/\\"/g, '"').replace(/\\\\/g, '\\');
+            }
+
+            try {
+                // Replace server-side written pluses with spaces.
+                // If we can't decode the cookie, ignore it, it's unusable.
+                // If we can't parse the cookie, ignore it, it's unusable.
+                s = decodeURIComponent(s.replace(pluses, ' '));
+                return config.json ? JSON.parse(s) : s;
+            } catch (e) {
+            }
+        }
+
+        function read(s, converter) {
+            var value = config.raw ? s : parseCookieValue(s);
+            return $.isFunction(converter) ? converter(value) : value;
+        }
+
+        var config = $.cookie = function (key, value, options) {
+
+            // Write
+
+            if (value !== undefined && !$.isFunction(value)) {
+                options = $.extend({}, config.defaults, options);
+
+                if (typeof options.expires === 'number') {
+                    var days = options.expires, t = options.expires = new Date();
+                    t.setTime(+t + days * 864e+5);
+                }
+
+                return (document.cookie = [
+                    encode(key), '=', stringifyCookieValue(value),
+                    options.expires ? '; expires=' + options.expires.toUTCString() : '', // use expires attribute, max-age is not supported by IE
+                    options.path ? '; path=' + options.path : '',
+                    options.domain ? '; domain=' + options.domain : '',
+                    options.secure ? '; secure' : ''
+                ].join(''));
+            }
+
+            // Read
+
+            var result = key ? undefined : {};
+
+            // To prevent the for loop in the first place assign an empty array
+            // in case there are no cookies at all. Also prevents odd result when
+            // calling $.cookie().
+            var cookies = document.cookie ? document.cookie.split('; ') : [];
+
+            for (var i = 0, l = cookies.length; i < l; i++) {
+                var parts = cookies[i].split('=');
+                var name = decode(parts.shift());
+                var cookie = parts.join('=');
+
+                if (key && key === name) {
+                    // If second argument (value) is a function it's a converter...
+                    result = read(cookie, value);
+                    break;
+                }
+
+                // Prevent storing a cookie that we couldn't decode.
+                if (!key && (cookie = read(cookie)) !== undefined) {
+                    result[name] = cookie;
+                }
+            }
+
+            return result;
+        };
+
+        config.defaults = {};
+
+        $.removeCookie = function (key, options) {
+            if ($.cookie(key) === undefined) {
+                return false;
+            }
+
+            // Must not alter options, thus extending a fresh object...
+            $.cookie(key, '', $.extend({}, options, { expires: -1 }));
+            return !$.cookie(key);
+        };
+
+    }));
+</script>
+</head>
+
+<body>
+<div class="videoFocus" style="display: none;background: black">
+    <div class="videoitemL">
+        <a href="http://ck101.com/" target="_blank"><img src="http://s2.imgs.cc/img/tzxm9IU.jpg" alt=""></a>
+    </div>
+    <div class="modPplayerBox">
+        <div id="youtube" style="position:relative;">
+            <div id="player"></div>
+            <a href="http://ck101.com"
+               style="display:block;width:980px;height:315px;position:absolute;top:0;left:0;z-index:2;"
+               target="_blank;"></a>
+        </div>
+        <script type="text/javascript">
+
+            function loadYtplayer() {
+                var tag = document.createElement('script');
+                tag.src = "http://www.youtube.com/iframe_api";
+                var firstScriptTag = document.getElementsByTagName('script')[0];
+                firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+            }
+
+            var player;
+            var key = videoIds = document.URL.split('#');
+            function onYouTubeIframeAPIReady() {
+                var youtubekey = key[1];
+                player = new YT.Player('player', {
+                    height: '315',
+                    width: '980',
+                    videoId: youtubekey,
+                    playerVars: {rel: 0, showinfo: 0, autoplay: 1, controls: 0},
+                    events: {
+                        'onStateChange': onPlayerStateChange
+                    }
+                });
+            }
+
+            function onPlayerStateChange(event) {
+                if (event.data == YT.PlayerState.ENDED) {
+                    // complete
+
+                    //循环播放
+                    // playtime = player.getCurrentTime();
+                    // player.seekTo(0);
+
+                }
+            }
+
+            function close() {
+                playtime = player.getCurrentTime();
+                player.pauseVideo();
+                player.seekTo(0);
+            }
+
+            function play() {
+                player.seekTo(0);
+                player.playVideo();
+            }
+
+
+            function mute() {
+                if (player.isMuted()) {
+                    player.unMute();
+                    $('#turnSound').removeClass('turnOffSound');
+                    $('#turnSound').addClass('turnOnSound');
+                } else {
+                    player.mute()
+                    $('#turnSound').removeClass('turnOnSound');
+                    $('#turnSound').addClass('turnOffSound');
+                }
+
+            }
+
+
+            $(document).ready(function () {
+
+                var $bigAd = $('.videoFocus');
+
+                var playAction = function() {
+                    loadYtplayer();
+                        $bigAd.show();
+
+
+                     };
+
+                      playAction();
+
+                    $('.closeAdBtn').click(function () {
+                        close();
+                        $bigAd.slideUp(500, function () {
+                            $('.videoADImg').fadeIn(100);
+                        });
+                    });
+                    $('.playAdBtn').click(function () {
+                        $('.videoADImg').fadeOut(100, function () {
+                            $bigAd.slideDown( 500 );
+                            play();
+                        })
+                    })
+            });
+
+        </script>
+
+
+    <span class="modActionBar">
+      <input type="button" value="關閉廣告" class="closeAdBtn">
+      <a href="javascript:;" class="turnOnSound" id="turnSound" onclick="mute()">關閉聲音</a>
+    </span>
+    </div>
+    <div class="videoitemR" >
+        <a href="http://ck101.com/" target="_blank"><img src="http://s2.imgs.cc/img/F4xQpxo.jpg" alt=""></a>
+    </div>
+</div>
+<div class="videoADImg" style="display: none;">
+    <a href="javascript:;" target="_blank"><img src="http://s2.imgs.cc/img/bQZMIgp.jpg">
+        <input type="button" value="播放廣告" class="playAdBtn"></a>
+</div>
+</body>
+</html>
+
+
